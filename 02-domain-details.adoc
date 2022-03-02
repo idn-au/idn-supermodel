@@ -1,0 +1,11 @@
+== Data Domains Details
+
+The Data Domains described above are implemented using multiple models and other resources. The following subsections describe the Domains' details and link to all their resources.
+
+=== Data Cataloguing Domain
+
+=== Organisations & People Domain
+
+=== Spatiality Domain
+
+=== Theming Domain

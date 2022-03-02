@@ -1,0 +1,201 @@
+= Indigenous Data Network Supermodel
+:toc: left
+:table-stripes: even
+:sectnums:
+
+== Metadata
+
+[width=75%, frame=none, grid=none, cols="1,5"]
+|===
+|**IRI** | https://linked.data.gov.au/def/idn-supermodel
+|**Title** | Geoscience Australia Supermodel Specifciation
+|**Description** | This Model - the GA Supermodel - is https://www.ga.gov.au[Geoscience Australia]'s overarching data model that provides integration logic for data elements in many of GA's specialised domains. It also provides logic for Persistent Identifier (PID) patterning.
+|**Created** | 2022-03-02
+|**Modified** | 2022-03-02
+|**Issued** | 0000-00-00
+|**Creator** | https://linked.data.gov.au/org/idn[Indigenous Data Network]
+|**Publisher** | https://linked.data.gov.au/org/idn[Indigenous Data Network]
+|**License** | https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International (CC BY 4.0)]
+|**Machine-readable form** | https://surroundaustralia.github.io/idn-supermodel/supermodel.ttl[supermodel.ttl]
+|===
+
+== Preamble
+
+=== Abstract
+
+This Model - the IDN Supermodel - is the Australian Indigenous Data Network's overarching data model that provides integration logic for all elements of the IDN's data holdings.
+
+=== Namespaces
+
+This model is built on a "baseline" of Semantic Web models which use a variatey of namespaces. Prefixes for thess namespaces, used througout this document, are listed below.
+
+[id=tbl-prefixes, width=75%, frame=none, grid=none]
+.Namespaces
+|===
+|Prefix | Namespace | Description
+
+| **`super`** | **`https://linked.data.gov.au/def/idn-supermodel/`** | **this model**
+|`dcterms:` | `http://purl.org/dc/terms/` | Dublin Core Terms vocabulary namespace
+|`ex:` | `http://example.com/` | Generic examples namespace
+|`owl:` | `http://www.w3.org/2002/07/owl#` | Web Ontology Language ontology namespace
+|`rdfs:` | `http://www.w3.org/2000/01/rdf-schema#` | RDF Schema ontology namespace
+|`sosa:` | `http://www.w3.org/ns/sosa/` | Sensor, Observation, Sample, and Actuator ontology namespace
+|`skos:` | `http://www.w3.org/2004/02/skos/core#` | Simple Knowledge Organization System (SKOS) ontology namespace
+|`time:` | `http://www.w3.org/2006/time#` | Time Ontology in OWL namespace
+|`void:` | `http://rdfs.org/ns/void#` | Vocabulary of Interlinked Data (VoID) ontology namespace
+|`xsd:` | `http://www.w3.org/2001/XMLSchema#` | XML Schema Definitions ontology namespace
+|===
+
+=== Terms & Definitions
+
+The following terms appear in this document and, when they do, the definitions in this section apply to them.
+
+[id=central-class]
+Central Class::
+
+`http://pid.geoscience.gov.au/def/sm/terms-definitions/central-class`
++
+Central Classes are the generic data classes at the centre of Data Domains with high-level relationships between them defined in this supermodel. 
++
+These classes are taken from general standards - usually well-known international stadnards - and Geoscience Australia specialises and extends them to make specific, custom, classes for their needs.
+
+[id=data-domain]
+Data Domain::
+
+`http://pid.geoscience.gov.au/def/sm/terms-definitions/data-domain`
++
+High-level conceptual areas within which Geosicence Australia has data. 
++
+These Data Domains are not themed scientificly - 'geology', 'hydrogeology', etc. - but instead based on parts of the _Observations & Measurement_ <<ISO19156>> standard, realised in Semantic Web form in the SOSA Ontology, part of the _Semantic Sensor Network Ontology_ <<SSN>>.
++
+Current Data Domain are shown in <<fig-top-level, Figure 1>>.
+
+[id=knowledge-graph]
+Knowledge Graph::
+
+`http://pid.geoscience.gov.au/def/sm/terms-definitions/knowledge-graph`
++
+A Knowledge Graph is a dataset that uses a graph data tructure - nodes and edges - with strongly-defined elements.
+
+[id=linked-data]
+Linked Data::
+
+`http://pid.geoscience.gov.au/def/sm/terms-definitions/linked-data`
++
+A set of technologies and conventions defined by the https://www.w3.org[World Wide Web Consortium] that aim to present data in both human- and machine-readable form over the Internet. 
++
+Linked Data is strongly-defined with each element having either a local definition or a link to an available definition on the Internet.
++
+Linked Data is graph-based in nature, that is it consistes of nodes and edges that can forever be linked to further conceps with defined relationships.
++
+-- https://www.w3.org/standards/semanticweb/data
+
+[id=semantic-web]
+Semantic Web::
+
+`http://pid.geoscience.gov.au/def/sm/terms-definitions/semantic-web`
++
+The https://www.w3.org[World Wide Web Consortium]'s vision of an Internet-based web of Linked Data. 
++
+Semantic Web is used to refer to something more than just the technologies and conventions of Linked Data; the term also encompases a specific set of interoperable data models - often called ontologies - published by the W3C, other standards bodies and some well-known companies.
++
+The 'semantic' refers to the strongly-defined nature of the elements in the Semantic Web: the meaning of Semantic Web data is as precicely defined as any data can be.
++
+-- https://www.w3.org/standards/semanticweb/
+
+=== Conventions
+
+All model diagrams use elements introduced in <<#fig-level0-key, Figure 1>>. These elements are defined in the RDF, RDFS and OWL ontologies, see <<OWL>> for mode details.
+
+All code snippets in this document, used to show formal and machine-readable versions of concepts, are expressed using the Turtle RDF syntax <<TTL>>.
+
+== Introduction
+
+This model described a set of <<#data-domain, Data Domains>> with <<#central-class, Central Classes>> that are associated using <<#linked-data, Linked Data>> principles. Specialisations of the Central Classes are made to cater for particular data needs. 
+
+Altogether, these things form a <<#knowledge-graph, Knowledge Graph>> of data for Geoscience Australia that participates in the wider, international, <<#semantic-web, Semantic Web>>.
+
+This model is predicated on an assumption that GA is a data aggregation organisation and therefore data cataloguing is its major concern. At the centre of this model then is a domain of `Data Cataloguing`, the main elements of which are taken from the _Data Catalog Vocabulary_ (<<DCAT>>). The things that GA's data are mostly about are spatial things, hence a Data Domain of `Spatiality`, for which the _GeoSPARQL_ <<GEO>> is core. The way GA generates information about spatial things is via observations and various forms of sampling, hence a Data Domain of `Sampling` and for this one the _Sensor, Observation, Sample, and Actuator_ (SOSA) ontology <<SSN>> is mainly used as it which focuseses on observations and how they produce results, what the results are about and so on. GA's data is cetegorised in various ways and for this the Data Domain of `Theming` is indicated. Within it, taxonomy representation using <<SKOS>> is paramount. Finally, all organisations relate their data and processes to thus who are responsible for them, thus the final Data Domain is indeed `Organisations and People` which is modelled using a number of models such as <<DCTERMS>>, <<PROV>> and <<SDO>>. 
+
+These models are also all Semantic Web models and they have been selected for their easy interoperability.
+
+All elements of this model are modelled using the _Web Ontology Language_ <<OWL>> and specailisations of it, such as the _Simple Knowledge Observation System_ <<SKOS>> which is used for modelling taxonomies of concepts. As well as the textual and image descriptions of the model here, in the next Section, a machine-readable version of this model is available (see <<Metadata, Metadata>>).
+
+=== Uses
+
+
+== Model
+
+This model, the actual IDN Supermodel itself, is a profiling - specialised reusing - of multiple, well-known Semantic Web models. It is organised into a series of _Levels_ which serve different purposed. All elements of the model are only defined once and the various _Levels_ simply present views of the model at differnt levels of abstraction to serve their viarous intended purposes.
+
+=== Level 0: Model Background
+
+This view of the model is a backgrounding one which describes the underpinning model mecahnics that it uses. The object modelling used is based on the _Web Ontology Language_ <<OWL>> and its own underlying use of RDF & RDFS footnote:[RDF: https://www.w3.org/RDF/, RDFS: https://www.w3.org/TR/rdf-schema/. These references generally need not be followed as descriptions of the use of OWL will cover their relevant concepts.]. The _Provenance Ontology_ <<PROV>> is used to model real-world causal dependencies - provenance.
+
+==== Diagram Key
+
+The figure below is a key for the elements in all of the model diagrams in this document.
+
+[id=fig-level0-key]
+.Diagram elements key
+image::img/key.png[]
+
+==== Object Modelling
+
+The elements from the above subsection are shown in relation to one another in the figure below.
+
+[id=fig-level0-owl]
+.OWL objects and their relations
+image::img/level0-owl.png[]
+
+The elements shown above are identified with prefixed IRIs that correspond to entries in the <<#tbl-prefixes, Namespace Table>>. A short explanation of the diagram key elements is:
+
+* `owl:Class` - represents any conceptual class of objects. Classes are expected to contain individuals - instances of the class - and the class, as a whole, may have realtions to other classes
+* `owl:NamedIndividual` - an individual of an `owl:class`. For example, for the class _ships_, an individual might be _Titanic_
+* `rdf:property` - a relationship between classes, individuals, or any objects and Literals
+* `rdfs:subClassOf` -  an `rdf:property` indicating that the domain (from object) is a subclass of the range (to objects). An example is the class _student_ which is a subclass of _person_: all _students_ are clearly _persons_ but not _vice versa_
+* `rdf:type` - the property that related an `owl:NamedIndividual` to the `owl:Class` that it's a member of
+* `Literal` - a simple literal data property, e.g. the string "Nicholas", or the number 42. Specific literal types are usually indicated when used
+
+The remaining diagrams in this document use extensions to this basic model, for example <<#fig-level0-prov, Figure 3>> uses colour-coded specialised forms of `owl:Class` (subclasses of it) and the relations in <<#fig-central-classes, Figure 5>> are specialised forms of `rdf:property`.
+
+==== Provenance
+
+General provenance/lineage information about anything - a rock sample, a dataset, a term in a vocabulary etc. - is described using the _Provenance Ontology_ <<PROV>> which views _everything_ in the world as being of one or more types in <<#fig-level0-prov, Figure 3>>.
+
+[id=fig-level0-prov]
+.PROV main classes and main relations
+image::img/level0-prov.png[]
+
+According to PROV, all things are either a:
+
+* `prov:Entity` - a physical, digital, conceptual, or other kind of thing with some fixed aspects
+* `prov:Agent` - something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity
+* `prov:Activity` - something that occurs over a period of time and acts upon or with entities
+
+While not often in front of mind for objects in any Data Domain, provenance relations always apply, for example: a `sosa:Sample` within the _Sampling_ domain is a `prov:Entity` and will necissarily have been created via a `sosa:Sampling` which is a `prov:Activity`. Another example: an `sdo:Person` related to a `dcat:Dataset` via the property `dcterms:creator` in the _DataCataloging_ domain is a specialised form of a `prov:Agent` related to a `prov:Entity` via `prov:wasAttributedTo`.
+
+=== Level 1: Data Domains
+
+The top-level view of the GA supermodel that assumes Level 0 background mechanics shows a set of 5 <<#data-domain, Data Domains>> which are:
+
+1. http://pid.geoscience.gov.au/def/sm/data-domains/data-cataloguing:[Data Cataloguing]
+2. http://pid.geoscience.gov.au/def/sm/data-domains/organisations-people:[Organisations & People]
+3. http://pid.geoscience.gov.au/def/sm/data-domains/spatiality:[Spatiality]
+4. http://pid.geoscience.gov.au/def/sm/data-domains/theming:[Theming]
+
+These are shown in <<fig-top-level, Figure 1>> below.
+
+[id=fig-top-level]
+.Top-level view of the IDN Supermodel showing Data Domains
+image::img/data-domains.png[]
+
+=== Level 2: Central Classes
+
+=== Level 3: Domain Main Classes
+
+include::02-domain-details.adoc[]
+
+:sectnums!:
+
+include::99-references.adoc[]
