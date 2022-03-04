@@ -2,6 +2,8 @@
 
 * [[ABIS]] Department of Agriculture, Water and the Enviroment, _Australia Biodiversity Information Standard (ABIS)_, Australian government Semantic Web Standard (2022-01-14). https://linked.data.gov.au/def/abis
 
+* [[DQ]] World Wide Web Consortium, _The RDF Data Cube Vocabulary_, W3C Recommendation (16 January 2014). http://www.w3.org/TR/vocab-data-cube/
+
 * [[DCTERMS]] DCMI Usage Board, _DCMI Metadata Terms_, A DCMI Recommendation (2020-01-20). https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 
 * [[DCAT]] World Wide Web Consortium, _Data Catalog Vocabulary (DCAT) - Version 2_, W3C Working Group Note (04 February 2020). https://www.w3.org/TR/vocab-dcat/
