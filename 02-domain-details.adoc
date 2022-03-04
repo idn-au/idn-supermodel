@@ -4,19 +4,23 @@ The Data Domains described above are implemented using multiple models and other
 
 === Data Cataloguing Domain
 
-**TODO**
+This model is based on the _Data Catalog Vocabulary_ <<DCAT>> and _The Provenance Ontology_ <<PROV>> with extensions to cater for mappings to FAIR <<FAIR>> and CARE <<CARE>> models. The essential model is shown in <<datacataloguing-model, Figure 8>>.
+
+[id=datacataloguing-model]
+.Data Cataloguing Model, based on DCAT & PROV
+image::img/details-datacataloguing.png[]
 
 === Observations Domain
 
-This domain is essentially the Data Cube Vocabulary <<DQ>>'s core elements with dataset metadata replaced with elements from DCAT <<DCAT>>. The essential model is shown in <<obs-model, Figure 7>>.
+This domain is essentially the Data Cube Vocabulary <<DQ>>'s core elements with dataset metadata replaced with elements from DCAT <<DCAT>>. The essential model is shown in <<obs-model, Figure 9>>.
 
 [id=obs-model]
-.Observations Model, based on Data Cube Vocabulary
+.Observations Model, based on https://www.w3.org/TR/vocab-data-cube/#fig-pictorial-summary-of-key-terms-and-their-relationship[Data Cube Vocabulary overview]
 image::img/details-observations.png[]
 
 === Organisations & People Domain
 
-This domain is essentially the organization modelling element of https://schema.org:[schema.org] with a few additional properties to track some IDN-relevant aspects of an organisation. The essential model is shown in <<org-model, Figure 8>>.
+This domain is essentially the organization modelling element of https://schema.org[schema.org] with a few additional properties to track some IDN-relevant aspects of an organisation. The essential model is shown in <<org-model, Figure 10>>.
 
 [id=org-model]
 .IDN Organisation Model, based on schema.org

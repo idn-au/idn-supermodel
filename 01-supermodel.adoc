@@ -179,11 +179,11 @@ While not often in front of mind for objects in any Data Domain, provenance rela
 
 The top-level view of the GA supermodel that assumes Level 0 background mechanics shows a set of 5 <<#data-domain, Data Domains>> which are:
 
-1. http://pid.geoscience.gov.au/def/sm/data-domains/sampling:[Observations]
-2. http://pid.geoscience.gov.au/def/sm/data-domains/data-cataloguing:[Data Cataloguing]
-3. http://pid.geoscience.gov.au/def/sm/data-domains/organisations-people:[Organisations & People]
-4. http://pid.geoscience.gov.au/def/sm/data-domains/spatiality:[Spatiality]
-5. http://pid.geoscience.gov.au/def/sm/data-domains/theming:[Theming]
+1. http://pid.geoscience.gov.au/def/sm/data-domains/sampling[Observations]
+2. http://pid.geoscience.gov.au/def/sm/data-domains/data-cataloguing[Data Cataloguing]
+3. http://pid.geoscience.gov.au/def/sm/data-domains/organisations-people[Organisations & People]
+4. http://pid.geoscience.gov.au/def/sm/data-domains/spatiality[Spatiality]
+5. http://pid.geoscience.gov.au/def/sm/data-domains/theming[Theming]
 
 These are shown in <<fig-top-level, Figure 1>> below.
 
@@ -196,6 +196,12 @@ image::img/data-domains.png[]
 **TODO**
 
 === Level 3: Domain Main Classes
+
+==== Data Catalouging Domain
+
+[id=fig-datacataloguing]
+.Central Classes of the Data Cataloguing Domain
+image::img/main-classes-data-cataloguing.png[]
 
 ==== Observations Domain
 
