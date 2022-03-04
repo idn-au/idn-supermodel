@@ -467,9 +467,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_data_domains_details">5. Data Domains Details</a>
 <ul class="sectlevel2">
 <li><a href="#_data_cataloguing_domain">5.1. Data Cataloguing Domain</a></li>
-<li><a href="#_organisations_people_domain">5.2. Organisations &amp; People Domain</a></li>
-<li><a href="#_spatiality_domain">5.3. Spatiality Domain</a></li>
-<li><a href="#_theming_domain">5.4. Theming Domain</a></li>
+<li><a href="#_observations_domain_2">5.2. Observations Domain</a></li>
+<li><a href="#_organisations_people_domain">5.3. Organisations &amp; People Domain</a></li>
+<li><a href="#_spatiality_domain">5.4. Spatiality Domain</a></li>
+<li><a href="#_theming_domain">5.5. Theming Domain</a></li>
 </ul>
 </li>
 <li><a href="#_references">References</a></li>
@@ -496,7 +497,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This Model - the GA Supermodel - is <a href="https://www.ga.gov.au">Geoscience Australia</a>'s overarching data model that provides integration logic for data elements in many of GA&#8217;s specialised domains. It also provides logic for Persistent Identifier (PID) patterning.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This Model - the IDN Supermodel - is the Indigenous Data Network&#8217;s overarching data model that provides integration logic for data elements in many of its specialised domains.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Created</strong></p></td>
@@ -536,7 +537,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_abstract">2.1. Abstract</h3>
 <div class="paragraph">
-<p>This Model - the IDN Supermodel - is the Australian Indigenous Data Network&#8217;s overarching data model that provides integration logic for all elements of the IDN&#8217;s data holdings.</p>
+<p>This Model - the IDN Supermodel - is the Indigenous Data Network&#8217;s overarching data model that provides integration logic for data elements in many of its specialised domains.</p>
 </div>
 </div>
 <div class="sect2">
@@ -838,16 +839,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/data-cataloguing:">Data Cataloguing</a></p>
+<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/sampling">Observations</a></p>
 </li>
 <li>
-<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/organisations-people:">Organisations &amp; People</a></p>
+<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/data-cataloguing">Data Cataloguing</a></p>
 </li>
 <li>
-<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/spatiality:">Spatiality</a></p>
+<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/organisations-people">Organisations &amp; People</a></p>
 </li>
 <li>
-<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/theming:">Theming</a></p>
+<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/spatiality">Spatiality</a></p>
+</li>
+<li>
+<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/theming">Theming</a></p>
 </li>
 </ol>
 </div>
@@ -863,11 +867,39 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect2">
 <h3 id="_level_2_central_classes">4.3. Level 2: Central Classes</h3>
-
+<div class="paragraph">
+<p><strong>TODO</strong></p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_level_3_domain_main_classes">4.4. Level 3: Domain Main Classes</h3>
-
+<div class="sect3">
+<h4 id="_data_catalouging_domain">4.4.1. Data Catalouging Domain</h4>
+<div id="fig-datacataloguing" class="imageblock">
+<div class="content">
+<img src="https://surroundaustralia.github.io/idn-supermodel/img/main-classes-data-cataloguing.png" alt="main classes data cataloguing">
+</div>
+<div class="title">Figure 5. Central Classes of the Data Cataloguing Domain</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_observations_domain">4.4.2. Observations Domain</h4>
+<div id="fig-observations" class="imageblock">
+<div class="content">
+<img src="https://surroundaustralia.github.io/idn-supermodel/img/main-classes-observations.png" alt="main classes observations">
+</div>
+<div class="title">Figure 6. Central Classes of the Observations Domain</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_organisations_people">4.4.3. Organisations &amp; People</h4>
+<div id="orgs" class="imageblock">
+<div class="content">
+<img src="https://surroundaustralia.github.io/idn-supermodel/img/main-classes-organisations.png" alt="main classes organisations">
+</div>
+<div class="title">Figure 7. Central Classes of the Organisations &amp; People Domain</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -879,19 +911,51 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="sect2">
 <h3 id="_data_cataloguing_domain">5.1. Data Cataloguing Domain</h3>
-
+<div class="paragraph">
+<p>This model is based on the <em>Data Catalog Vocabulary</em> <a href="#DCAT">[DCAT]</a> and <em>The Provenance Ontology</em> <a href="#PROV">[PROV]</a> with extensions to cater for mappings to FAIR <a href="#FAIR">[FAIR]</a> and CARE <a href="#CARE">[CARE]</a> models. The essential model is shown in <a href="#datacataloguing-model">Figure 8</a>.</p>
+</div>
+<div id="datacataloguing-model" class="imageblock">
+<div class="content">
+<img src="https://surroundaustralia.github.io/idn-supermodel/img/details-datacataloguing.png" alt="details datacataloguing">
+</div>
+<div class="title">Figure 8. Data Cataloguing Model, based on DCAT &amp; PROV</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_organisations_people_domain">5.2. Organisations &amp; People Domain</h3>
-
+<h3 id="_observations_domain_2">5.2. Observations Domain</h3>
+<div class="paragraph">
+<p>This domain is essentially the Data Cube Vocabulary <a href="#DQ">[DQ]</a>'s core elements with dataset metadata replaced with elements from DCAT <a href="#DCAT">[DCAT]</a>. The essential model is shown in <a href="#obs-model">Figure 9</a>.</p>
+</div>
+<div id="obs-model" class="imageblock">
+<div class="content">
+<img src="https://surroundaustralia.github.io/idn-supermodel/img/details-observations.png" alt="details observations">
+</div>
+<div class="title">Figure 9. Observations Model, based on <a href="https://www.w3.org/TR/vocab-data-cube/#fig-pictorial-summary-of-key-terms-and-their-relationship">Data Cube Vocabulary overview</a></div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_spatiality_domain">5.3. Spatiality Domain</h3>
-
+<h3 id="_organisations_people_domain">5.3. Organisations &amp; People Domain</h3>
+<div class="paragraph">
+<p>This domain is essentially the organization modelling element of <a href="https://schema.org">schema.org</a> with a few additional properties to track some IDN-relevant aspects of an organisation. The essential model is shown in <a href="#org-model">Figure 10</a>.</p>
+</div>
+<div id="org-model" class="imageblock">
+<div class="content">
+<img src="https://surroundaustralia.github.io/idn-supermodel/img/details-organisations.png" alt="details organisations">
+</div>
+<div class="title">Figure 10. IDN Organisation Model, based on schema.org</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_theming_domain">5.4. Theming Domain</h3>
-
+<h3 id="_spatiality_domain">5.4. Spatiality Domain</h3>
+<div class="paragraph">
+<p><strong>TODO</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_theming_domain">5.5. Theming Domain</h3>
+<div class="paragraph">
+<p><strong>TODO</strong></p>
+</div>
 </div>
 </div>
 </div>
@@ -902,6 +966,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul>
 <li>
 <p><a id="ABIS"></a> Department of Agriculture, Water and the Enviroment, <em>Australia Biodiversity Information Standard (ABIS)</em>, Australian government Semantic Web Standard (2022-01-14). <a href="https://linked.data.gov.au/def/abis" class="bare">https://linked.data.gov.au/def/abis</a></p>
+</li>
+<li>
+<p><a id="DQ"></a> World Wide Web Consortium, <em>The RDF Data Cube Vocabulary</em>, W3C Recommendation (16 January 2014). <a href="http://www.w3.org/TR/vocab-data-cube/" class="bare">http://www.w3.org/TR/vocab-data-cube/</a></p>
 </li>
 <li>
 <p><a id="DCTERMS"></a> DCMI Usage Board, <em>DCMI Metadata Terms</em>, A DCMI Recommendation (2020-01-20). <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" class="bare">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></p>
@@ -958,7 +1025,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-03-02 03:01:00 UTC
+Last updated 2022-03-04 11:16:42 UTC
 </div>
 </div>
 </body>
