@@ -1,5 +1,3 @@
-**DEPRECATED** see https://github.com/idn-au/idn-supermodel
-
 = Indigenous Data Network's Supermodel
 
 WARNING: in early development, not officially released yet
