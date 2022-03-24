@@ -7,7 +7,7 @@
 
 [width=75%, frame=none, grid=none, cols="1,5"]
 |===
-|**IRI** | https://linked.data.gov.au/def/idn-supermodel
+|**IRI** | https://linked.data.gov.au/def/idn-supermodel __Note the IRI for this data model being in a gov.au domain will require endorsement by IIRC governance processes__
 |**Title** | Geoscience Australia Supermodel Specifciation
 |**Description** | This Model - the IDN Supermodel - is the Indigenous Data Network's overarching data model that provides integration logic for data elements in many of its specialised domains.
 |**Created** | 2022-03-02
