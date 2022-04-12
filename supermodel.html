@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.10">
-<title>Indigenous Data Network Supermodel</title>
+<title>Indigenous Data Network Supermodel Specification</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -438,7 +438,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
-<h1>Indigenous Data Network Supermodel</h1>
+<h1>Indigenous Data Network Supermodel Specification</h1>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
@@ -489,11 +489,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>IRI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/idn-supermodel" class="bare">https://linked.data.gov.au/def/idn-supermodel</a> <em>Note the IRI for this data model being in a gov.au domain will require endorsement by IIRC governance processes</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/idn-supermodel" class="bare">https://linked.data.gov.au/def/idn-supermodel</a></p>
+<p class="tableblock"><em>Note the IRI for this data model being in a gov.au domain will require endorsement by IIRC governance processes</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>altDevIRI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://idnau.org/def/sm" class="bare">http://idnau.org/def/sm</a> <em>Possible "under development" version at IDN domain?????</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Editor&#8217;s Draft</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://idnau.org/def/sm" class="bare">http://idnau.org/def/sm</a></p>
+<p class="tableblock"><em>The "under development" and latest version of the IDN Supermodel</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Title</strong></p></td>
@@ -529,7 +531,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Machine-readable form</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://surroundaustralia.github.io/idn-supermodel/supermodel.ttl">supermodel.ttl</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://idn-au.github.io/idn-supermodel/supermodel.ttl">supermodel.ttl</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -543,11 +545,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>This Model - the IDN Supermodel - is the Indigenous Data Network&#8217;s overarching data model that provides integration logic for data elements in many of its specialised domains.</p>
 </div>
+<div class="paragraph">
+<p>This Supermodel is formulated similarly to other Supermodels in other, semi-related, scenarios such as <a href="https://www.ga.gov.au">Geoscience Australia</a>'s Supermodel for the <a href="https://surroundaustralia.github.io/loci-supermodel/supermodel.html">Location Index</a> initiative.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_namespaces">2.2. Namespaces</h3>
 <div class="paragraph">
-<p>This model is built on a "baseline" of Semantic Web models which use a variatey of namespaces. Prefixes for thess namespaces, used througout this document, are listed below.</p>
+<p>This model is built on a "baseline" of Semantic Web models which use a variety of namespaces. Prefixes for thess namespaces, used througout this document, are listed below.</p>
 </div>
 <table id="tbl-prefixes" class="tableblock frame-none grid-none stripes-even" style="width: 75%;">
 <caption class="title">Table 1. Namespaces</caption>
@@ -566,8 +571,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><code>super</code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><code><a href="https://linked.data.gov.au/def/idn-supermodel/" class="bare">https://linked.data.gov.au/def/idn-supermodel/</a></code></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>this model</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><code><a href="https://linked.data.gov.au/def/supermodel/" class="bare">https://linked.data.gov.au/def/supermodel/</a></code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>the generic Supermodel model</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><code>td:</code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><code><a href="https://linked.data.gov.au/def/supermodel/terms/" class="bare">https://linked.data.gov.au/def/supermodel/terms/</a></code></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>the Terms &amp; Definitions vocabulary within the Supermodel model</strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>dcterms:</code></p></td>
@@ -620,18 +630,25 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_terms_definitions">2.3. Terms &amp; Definitions</h3>
 <div class="paragraph">
-<p>The following terms appear in this document and, when they do, the definitions in this section apply to them.</p>
+<p>The following terms appear in this document and, when they do, the definitions in this section apply to them. This section&#8217;s content is also presented online in a formal vocabulary at:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code><a href="https://linked.data.gov.au/def/supermodel/terms">https://linked.data.gov.au/def/supermodel/terms</a></code></p>
+</li>
+</ul>
 </div>
 <div id="central-class" class="dlist">
 <dl>
 <dt class="hdlist1">Central Class</dt>
 <dd>
-<p><code><a href="http://pid.geoscience.gov.au/def/sm/terms-definitions/central-class" class="bare">http://pid.geoscience.gov.au/def/sm/terms-definitions/central-class</a></code></p>
+<p><code><a href="https://linked.data.gov.au/def/supermodel/terms/central-class" class="bare">https://linked.data.gov.au/def/supermodel/terms/central-class</a></code></p>
 <div class="paragraph">
 <p>Central Classes are the generic data classes at the centre of Data Domains with high-level relationships between them defined in this supermodel.</p>
 </div>
 <div class="paragraph">
-<p>These classes are taken from general standards - usually well-known international stadnards - and Geoscience Australia specialises and extends them to make specific, custom, classes for their needs.</p>
+<p>These classes are taken from general standards - usually well-known international stadnards - and the Indigenous Data Network specialises and extends them to make specific, custom, classes for their needs.</p>
 </div>
 </dd>
 </dl>
@@ -640,7 +657,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <dl>
 <dt class="hdlist1">Data Domain</dt>
 <dd>
-<p><code><a href="http://pid.geoscience.gov.au/def/sm/terms-definitions/data-domain" class="bare">http://pid.geoscience.gov.au/def/sm/terms-definitions/data-domain</a></code></p>
+<p><code><a href="https://linked.data.gov.au/def/supermodel/terms/data-domain" class="bare">https://linked.data.gov.au/def/supermodel/terms/data-domain</a></code></p>
 <div class="paragraph">
 <p>High-level conceptual areas within which Geosicence Australia has data.</p>
 </div>
@@ -657,7 +674,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <dl>
 <dt class="hdlist1">Knowledge Graph</dt>
 <dd>
-<p><code><a href="http://pid.geoscience.gov.au/def/sm/terms-definitions/knowledge-graph" class="bare">http://pid.geoscience.gov.au/def/sm/terms-definitions/knowledge-graph</a></code></p>
+<p><code><a href="https://linked.data.gov.au/def/supermodel/terms/knowledge-graph" class="bare">https://linked.data.gov.au/def/supermodel/terms/knowledge-graph</a></code></p>
 <div class="paragraph">
 <p>A Knowledge Graph is a dataset that uses a graph data tructure - nodes and edges - with strongly-defined elements.</p>
 </div>
@@ -668,7 +685,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <dl>
 <dt class="hdlist1">Linked Data</dt>
 <dd>
-<p><code><a href="http://pid.geoscience.gov.au/def/sm/terms-definitions/linked-data" class="bare">http://pid.geoscience.gov.au/def/sm/terms-definitions/linked-data</a></code></p>
+<p><code><a href="https://linked.data.gov.au/def/supermodel/terms/linked-data" class="bare">https://linked.data.gov.au/def/supermodel/terms/linked-data</a></code></p>
 <div class="paragraph">
 <p>A set of technologies and conventions defined by the <a href="https://www.w3.org">World Wide Web Consortium</a> that aim to present data in both human- and machine-readable form over the Internet.</p>
 </div>
@@ -688,7 +705,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <dl>
 <dt class="hdlist1">Semantic Web</dt>
 <dd>
-<p><code><a href="http://pid.geoscience.gov.au/def/sm/terms-definitions/semantic-web" class="bare">http://pid.geoscience.gov.au/def/sm/terms-definitions/semantic-web</a></code></p>
+<p><code><a href="https://linked.data.gov.au/def/supermodel/terms/semantic-web" class="bare">https://linked.data.gov.au/def/supermodel/terms/semantic-web</a></code></p>
 <div class="paragraph">
 <p>The <a href="https://www.w3.org">World Wide Web Consortium</a>'s vision of an Internet-based web of Linked Data.</p>
 </div>
@@ -723,10 +740,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>This model described a set of <a href="#data-domain">Data Domains</a> with <a href="#central-class">Central Classes</a> that are associated using <a href="#linked-data">Linked Data</a> principles. Specialisations of the Central Classes are made to cater for particular data needs.</p>
 </div>
 <div class="paragraph">
-<p>Altogether, these things form a <a href="#knowledge-graph">Knowledge Graph</a> of data for Geoscience Australia that participates in the wider, international, <a href="#semantic-web">Semantic Web</a>.</p>
+<p>Altogether, these things form a <a href="#knowledge-graph">Knowledge Graph</a> of data for the Indigenous Data Network (IDN) that participates in the wider, international, <a href="#semantic-web">Semantic Web</a>.</p>
 </div>
 <div class="paragraph">
-<p>This model is predicated on an assumption that GA is a data aggregation organisation and therefore data cataloguing is its major concern. At the centre of this model then is a domain of <code>Data Cataloguing</code>, the main elements of which are taken from the <em>Data Catalog Vocabulary</em> (<a href="#DCAT">[DCAT]</a>). The things that GA&#8217;s data are mostly about are spatial things, hence a Data Domain of <code>Spatiality</code>, for which the <em>GeoSPARQL</em> <a href="#GEO">[GEO]</a> is core. The way GA generates information about spatial things is via observations and various forms of sampling, hence a Data Domain of <code>Sampling</code> and for this one the <em>Sensor, Observation, Sample, and Actuator</em> (SOSA) ontology <a href="#SSN">[SSN]</a> is mainly used as it which focuseses on observations and how they produce results, what the results are about and so on. GA&#8217;s data is cetegorised in various ways and for this the Data Domain of <code>Theming</code> is indicated. Within it, taxonomy representation using <a href="#SKOS">[SKOS]</a> is paramount. Finally, all organisations relate their data and processes to thus who are responsible for them, thus the final Data Domain is indeed <code>Organisations and People</code> which is modelled using a number of models such as <a href="#DCTERMS">[DCTERMS]</a>, <a href="#PROV">[PROV]</a> and <a href="#SDO">[SDO]</a>.</p>
+<p>This model is predicated on an assumption that the IDN is a data aggregation organisation and therefore data cataloguing is its major concern. At the centre of this model then is a domain of <code>Data Cataloguing</code>, the main elements of which are taken from the <em>Data Catalog Vocabulary</em> (<a href="#DCAT">[DCAT]</a>). The things that IDN&#8217;s data are mostly about are spatial things, hence a Data Domain of <code>Spatiality</code>, for which the <em>GeoSPARQL</em> <a href="#GEO">[GEO]</a> is core. The way IDN generates information about spatial things is via observations and various forms of sampling, hence a Data Domain of <code>Sampling</code> and for this one the <em>Sensor, Observation, Sample, and Actuator</em> (SOSA) ontology <a href="#SSN">[SSN]</a> is mainly used as it which focuseses on observations and how they produce results, what the results are about and so on. IDN&#8217;s data is cetegorised in various ways and for this the Data Domain of <code>Theming</code> is indicated. Within it, taxonomy representation using <a href="#SKOS">[SKOS]</a> is paramount. Finally, all organisations relate their data and processes to thus who are responsible for them, thus the final Data Domain is indeed <code>Organisations and People</code> which is modelled using a number of models such as <a href="#DCTERMS">[DCTERMS]</a>, <a href="#PROV">[PROV]</a> and <a href="#SDO">[SDO]</a>.</p>
 </div>
 <div class="paragraph">
 <p>These models are also all Semantic Web models and they have been selected for their easy interoperability.</p>
@@ -744,12 +761,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_model">4. Model</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This model, the actual IDN Supermodel itself, is a profiling - specialised reusing - of multiple, well-known Semantic Web models. It is organised into a series of <em>Levels</em> which serve different purposed. All elements of the model are only defined once and the various <em>Levels</em> simply present views of the model at differnt levels of abstraction to serve their viarous intended purposes.</p>
+<p>This model, the actual IDN Supermodel itself, is a profile of - specialised reusing of - multiple, well-known Semantic Web models. It is organised into a series of <em>Levels</em> which serve different purposes. All elements of the model are only defined once and the various <em>Levels</em> simply present views of the model at differnt levels of abstraction to serve their viarous intended purposes.</p>
 </div>
 <div class="sect2">
 <h3 id="_level_0_model_background">4.1. Level 0: Model Background</h3>
 <div class="paragraph">
-<p>This view of the model is a backgrounding one which describes the underpinning model mecahnics that it uses. The object modelling used is based on the <em>Web Ontology Language</em> <a href="#OWL">[OWL]</a> and its own underlying use of RDF &amp; RDFS <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>. The <em>Provenance Ontology</em> <a href="#PROV">[PROV]</a> is used to model real-world causal dependencies - provenance.</p>
+<p>This view of the model is a backgrounding one which describes the underpinning model mechanics that it uses. The object modelling used is based on the <em>Web Ontology Language</em> <a href="#OWL">[OWL]</a> and its own underlying use of RDF &amp; RDFS <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>. The <em>Provenance Ontology</em> <a href="#PROV">[PROV]</a> is used to model real-world causal dependencies - provenance.</p>
 </div>
 <div class="sect3">
 <h4 id="_diagram_key">4.1.1. Diagram Key</h4>
@@ -838,24 +855,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_level_1_data_domains">4.2. Level 1: Data Domains</h3>
 <div class="paragraph">
-<p>The top-level view of the GA supermodel that assumes Level 0 background mechanics shows a set of 5 <a href="#data-domain">Data Domains</a> which are:</p>
+<p>The top-level view of the IDN supermodel that assumes Level 0 background mechanics shows a set of 5 <a href="#data-domain">Data Domains</a> which are:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/sampling">Observations</a></p>
+<p><a href="https://linked.data.gov.au/def/supermodel/data-domains/sampling">Observations</a></p>
 </li>
 <li>
-<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/data-cataloguing">Data Cataloguing</a></p>
+<p><a href="https://linked.data.gov.au/def/supermodel/data-domains/data-cataloguing">Data Cataloguing</a></p>
 </li>
 <li>
-<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/organisations-people">Organisations &amp; People</a></p>
+<p><a href="https://linked.data.gov.au/def/supermodel/data-domains/organisations-people">Organisations &amp; People</a></p>
 </li>
 <li>
-<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/spatiality">Spatiality</a></p>
+<p><a href="https://linked.data.gov.au/def/supermodel/data-domains/spatiality">Spatiality</a></p>
 </li>
 <li>
-<p><a href="http://pid.geoscience.gov.au/def/sm/data-domains/theming">Theming</a></p>
+<p><a href="https://linked.data.gov.au/def/supermodel/data-domains/theming">Theming</a></p>
 </li>
 </ol>
 </div>
@@ -1029,7 +1046,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-04-12 02:59:03 UTC
+Last updated 2022-04-12 06:49:21 UTC
 </div>
 </div>
 </body>
