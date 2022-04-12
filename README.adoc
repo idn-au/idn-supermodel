@@ -2,7 +2,7 @@
 
 WARNING: in early development, not officially released yet
 
-This Model - the IDN Supermodel - is the Australian Indigenous Data Network's overarching data model that provides integration logic for all elements of the IDN's data holdings.
+This Model - the IDN Supermodel - is the Australian https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network]'s overarching data model that provides integration logic for all elements of the IDN's data holdings.
 
 It is currently in early development within a project being conducted for the IDN by https://surroundaustralia.com[SURROUND Australia Pty Ltd].
 
