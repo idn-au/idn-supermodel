@@ -1,4 +1,4 @@
-= Indigenous Data Network Supermodel
+= Indigenous Data Network Supermodel Specification
 :toc: left
 :table-stripes: even
 :sectnums:
@@ -7,8 +7,12 @@
 
 [width=75%, frame=none, grid=none, cols="1,5"]
 |===
-|**IRI** | https://linked.data.gov.au/def/idn-supermodel __Note the IRI for this data model being in a gov.au domain will require endorsement by IIRC governance processes__
-|**altDevIRI** | http://idnau.org/def/sm __Possible "under development" version at IDN domain?????__
+|**IRI** | https://linked.data.gov.au/def/idn-supermodel 
+
+_Note the IRI for this data model being in a gov.au domain will require endorsement by IIRC governance processes_
+|**Editor's Draft** | http://idnau.org/def/sm 
+
+_The "under development" and latest version of the IDN Supermodel_
 |**Title** | Indigenous Data Network Australia Supermodel Specifciation
 |**Description** | This Model - the IDN Supermodel - is the Indigenous Data Network's overarching data model that provides integration logic for data elements in many of its specialised domains.
 |**Created** | 2022-03-02
@@ -17,25 +21,28 @@
 |**Creator** | https://linked.data.gov.au/org/idn[Indigenous Data Network]
 |**Publisher** | https://linked.data.gov.au/org/idn[Indigenous Data Network]
 |**License** | https://creativecommons.org/licenses/by/4.0/[Creative Commons Attribution 4.0 International (CC BY 4.0)]
-|**Machine-readable form** | https://surroundaustralia.github.io/idn-supermodel/supermodel.ttl[supermodel.ttl]
+|**Machine-readable form** | https://idn-au.github.io/idn-supermodel/supermodel.ttl[supermodel.ttl]
 |===
 
 == Preamble
 
 === Abstract
 
-This Model - the IDN Supermodel - is the Indigenous Data Network's overarching data model that provides integration logic for data elements in many of its specialised domains.
+This Model - the IDN Supermodel - is the Indigenous Data Network's overarching data model that provides integration logic for data elements in many of its specialised domains. 
+
+This Supermodel is formulated similarly to other Supermodels in other, semi-related, scenarios such as https://www.ga.gov.au[Geoscience Australia]'s Supermodel for the https://surroundaustralia.github.io/loci-supermodel/supermodel.html[Location Index] initiative.
 
 === Namespaces
 
-This model is built on a "baseline" of Semantic Web models which use a variatey of namespaces. Prefixes for thess namespaces, used througout this document, are listed below.
+This model is built on a "baseline" of Semantic Web models which use a variety of namespaces. Prefixes for thess namespaces, used througout this document, are listed below.
 
 [id=tbl-prefixes, width=75%, frame=none, grid=none]
 .Namespaces
 |===
 |Prefix | Namespace | Description
 
-| **`super`** | **`https://linked.data.gov.au/def/idn-supermodel/`** | **this model**
+| **`super`** | **`https://linked.data.gov.au/def/supermodel/`** | **the generic Supermodel model**
+| **`td:`** | **`https://linked.data.gov.au/def/supermodel/terms/`** | **the Terms & Definitions vocabulary within the Supermodel model**
 |`dcterms:` | `http://purl.org/dc/terms/` | Dublin Core Terms vocabulary namespace
 |`ex:` | `http://example.com/` | Generic examples namespace
 |`owl:` | `http://www.w3.org/2002/07/owl#` | Web Ontology Language ontology namespace
@@ -49,21 +56,23 @@ This model is built on a "baseline" of Semantic Web models which use a variatey 
 
 === Terms & Definitions
 
-The following terms appear in this document and, when they do, the definitions in this section apply to them.
+The following terms appear in this document and, when they do, the definitions in this section apply to them. This section's content is also presented online in a formal vocabulary at:
+
+* `https://linked.data.gov.au/def/supermodel/terms[https://linked.data.gov.au/def/supermodel/terms]`
 
 [id=central-class]
 Central Class::
 
-`http://pid.geoscience.gov.au/def/sm/terms-definitions/central-class`
+`https://linked.data.gov.au/def/supermodel/terms/central-class`
 +
 Central Classes are the generic data classes at the centre of Data Domains with high-level relationships between them defined in this supermodel. 
 +
-These classes are taken from general standards - usually well-known international stadnards - and Geoscience Australia specialises and extends them to make specific, custom, classes for their needs.
+These classes are taken from general standards - usually well-known international stadnards - and the Indigenous Data Network specialises and extends them to make specific, custom, classes for their needs.
 
 [id=data-domain]
 Data Domain::
 
-`http://pid.geoscience.gov.au/def/sm/terms-definitions/data-domain`
+`https://linked.data.gov.au/def/supermodel/terms/data-domain`
 +
 High-level conceptual areas within which Geosicence Australia has data. 
 +
@@ -74,14 +83,14 @@ Current Data Domain are shown in <<fig-top-level, Figure 1>>.
 [id=knowledge-graph]
 Knowledge Graph::
 
-`http://pid.geoscience.gov.au/def/sm/terms-definitions/knowledge-graph`
+`https://linked.data.gov.au/def/supermodel/terms/knowledge-graph`
 +
 A Knowledge Graph is a dataset that uses a graph data tructure - nodes and edges - with strongly-defined elements.
 
 [id=linked-data]
 Linked Data::
 
-`http://pid.geoscience.gov.au/def/sm/terms-definitions/linked-data`
+`https://linked.data.gov.au/def/supermodel/terms/linked-data`
 +
 A set of technologies and conventions defined by the https://www.w3.org[World Wide Web Consortium] that aim to present data in both human- and machine-readable form over the Internet. 
 +
@@ -94,7 +103,7 @@ Linked Data is graph-based in nature, that is it consistes of nodes and edges th
 [id=semantic-web]
 Semantic Web::
 
-`http://pid.geoscience.gov.au/def/sm/terms-definitions/semantic-web`
+`https://linked.data.gov.au/def/supermodel/terms/semantic-web`
 +
 The https://www.w3.org[World Wide Web Consortium]'s vision of an Internet-based web of Linked Data. 
 +
@@ -114,9 +123,9 @@ All code snippets in this document, used to show formal and machine-readable ver
 
 This model described a set of <<#data-domain, Data Domains>> with <<#central-class, Central Classes>> that are associated using <<#linked-data, Linked Data>> principles. Specialisations of the Central Classes are made to cater for particular data needs. 
 
-Altogether, these things form a <<#knowledge-graph, Knowledge Graph>> of data for Geoscience Australia that participates in the wider, international, <<#semantic-web, Semantic Web>>.
+Altogether, these things form a <<#knowledge-graph, Knowledge Graph>> of data for the Indigenous Data Network (IDN) that participates in the wider, international, <<#semantic-web, Semantic Web>>.
 
-This model is predicated on an assumption that GA is a data aggregation organisation and therefore data cataloguing is its major concern. At the centre of this model then is a domain of `Data Cataloguing`, the main elements of which are taken from the _Data Catalog Vocabulary_ (<<DCAT>>). The things that GA's data are mostly about are spatial things, hence a Data Domain of `Spatiality`, for which the _GeoSPARQL_ <<GEO>> is core. The way GA generates information about spatial things is via observations and various forms of sampling, hence a Data Domain of `Sampling` and for this one the _Sensor, Observation, Sample, and Actuator_ (SOSA) ontology <<SSN>> is mainly used as it which focuseses on observations and how they produce results, what the results are about and so on. GA's data is cetegorised in various ways and for this the Data Domain of `Theming` is indicated. Within it, taxonomy representation using <<SKOS>> is paramount. Finally, all organisations relate their data and processes to thus who are responsible for them, thus the final Data Domain is indeed `Organisations and People` which is modelled using a number of models such as <<DCTERMS>>, <<PROV>> and <<SDO>>. 
+This model is predicated on an assumption that the IDN is a data aggregation organisation and therefore data cataloguing is its major concern. At the centre of this model then is a domain of `Data Cataloguing`, the main elements of which are taken from the _Data Catalog Vocabulary_ (<<DCAT>>). The things that IDN's data are mostly about are spatial things, hence a Data Domain of `Spatiality`, for which the _GeoSPARQL_ <<GEO>> is core. The way IDN generates information about spatial things is via observations and various forms of sampling, hence a Data Domain of `Sampling` and for this one the _Sensor, Observation, Sample, and Actuator_ (SOSA) ontology <<SSN>> is mainly used as it which focuseses on observations and how they produce results, what the results are about and so on. IDN's data is cetegorised in various ways and for this the Data Domain of `Theming` is indicated. Within it, taxonomy representation using <<SKOS>> is paramount. Finally, all organisations relate their data and processes to thus who are responsible for them, thus the final Data Domain is indeed `Organisations and People` which is modelled using a number of models such as <<DCTERMS>>, <<PROV>> and <<SDO>>. 
 
 These models are also all Semantic Web models and they have been selected for their easy interoperability.
 
@@ -127,11 +136,11 @@ All elements of this model are modelled using the _Web Ontology Language_ <<OWL>
 
 == Model
 
-This model, the actual IDN Supermodel itself, is a profiling - specialised reusing - of multiple, well-known Semantic Web models. It is organised into a series of _Levels_ which serve different purposed. All elements of the model are only defined once and the various _Levels_ simply present views of the model at differnt levels of abstraction to serve their viarous intended purposes.
+This model, the actual IDN Supermodel itself, is a profile of - specialised reusing of - multiple, well-known Semantic Web models. It is organised into a series of _Levels_ which serve different purposes. All elements of the model are only defined once and the various _Levels_ simply present views of the model at differnt levels of abstraction to serve their viarous intended purposes.
 
 === Level 0: Model Background
 
-This view of the model is a backgrounding one which describes the underpinning model mecahnics that it uses. The object modelling used is based on the _Web Ontology Language_ <<OWL>> and its own underlying use of RDF & RDFS footnote:[RDF: https://www.w3.org/RDF/, RDFS: https://www.w3.org/TR/rdf-schema/. These references generally need not be followed as descriptions of the use of OWL will cover their relevant concepts.]. The _Provenance Ontology_ <<PROV>> is used to model real-world causal dependencies - provenance.
+This view of the model is a backgrounding one which describes the underpinning model mechanics that it uses. The object modelling used is based on the _Web Ontology Language_ <<OWL>> and its own underlying use of RDF & RDFS footnote:[RDF: https://www.w3.org/RDF/, RDFS: https://www.w3.org/TR/rdf-schema/. These references generally need not be followed as descriptions of the use of OWL will cover their relevant concepts.]. The _Provenance Ontology_ <<PROV>> is used to model real-world causal dependencies - provenance.
 
 ==== Diagram Key
 
@@ -178,13 +187,13 @@ While not often in front of mind for objects in any Data Domain, provenance rela
 
 === Level 1: Data Domains
 
-The top-level view of the GA supermodel that assumes Level 0 background mechanics shows a set of 5 <<#data-domain, Data Domains>> which are:
+The top-level view of the IDN supermodel that assumes Level 0 background mechanics shows a set of 5 <<#data-domain, Data Domains>> which are:
 
-1. http://pid.geoscience.gov.au/def/sm/data-domains/sampling[Observations]
-2. http://pid.geoscience.gov.au/def/sm/data-domains/data-cataloguing[Data Cataloguing]
-3. http://pid.geoscience.gov.au/def/sm/data-domains/organisations-people[Organisations & People]
-4. http://pid.geoscience.gov.au/def/sm/data-domains/spatiality[Spatiality]
-5. http://pid.geoscience.gov.au/def/sm/data-domains/theming[Theming]
+1. https://linked.data.gov.au/def/supermodel/data-domains/sampling[Observations]
+2. https://linked.data.gov.au/def/supermodel/data-domains/data-cataloguing[Data Cataloguing]
+3. https://linked.data.gov.au/def/supermodel/data-domains/organisations-people[Organisations & People]
+4. https://linked.data.gov.au/def/supermodel/data-domains/spatiality[Spatiality]
+5. https://linked.data.gov.au/def/supermodel/data-domains/theming[Theming]
 
 These are shown in <<fig-top-level, Figure 1>> below.
 
