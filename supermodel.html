@@ -453,7 +453,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_introduction">3. Introduction</a>
 <ul class="sectlevel2">
-<li><a href="#_uses">3.1. Uses</a></li>
+<li><a href="#_supermodel_structure">3.1. Supermodel Structure</a></li>
+<li><a href="#_idn_data_domains">3.2. IDN Data Domains</a></li>
+<li><a href="#_uses">3.3. Uses</a></li>
 </ul>
 </li>
 <li><a href="#_model">4. Model</a>
@@ -461,16 +463,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_level_0_model_background">4.1. Level 0: Model Background</a></li>
 <li><a href="#_level_1_data_domains">4.2. Level 1: Data Domains</a></li>
 <li><a href="#_level_2_central_classes">4.3. Level 2: Central Classes</a></li>
-<li><a href="#_level_3_domain_main_classes">4.4. Level 3: Domain Main Classes</a></li>
+<li><a href="#_level_3_domain_main_modelling">4.4. Level 3: Domain Main Modelling</a></li>
 </ul>
 </li>
 <li><a href="#_data_domains_details">5. Data Domains Details</a>
 <ul class="sectlevel2">
 <li><a href="#_data_cataloguing_domain">5.1. Data Cataloguing Domain</a></li>
 <li><a href="#_observations_domain_2">5.2. Observations Domain</a></li>
-<li><a href="#_organisations_people_domain">5.3. Organisations &amp; People Domain</a></li>
-<li><a href="#_spatiality_domain">5.4. Spatiality Domain</a></li>
-<li><a href="#_theming_domain">5.5. Theming Domain</a></li>
+<li><a href="#_spatiality_domain">5.3. Spatiality Domain</a></li>
+<li><a href="#_theming_domain">5.4. Theming Domain</a></li>
+<li><a href="#_organisations_people_domain">5.5. Organisations &amp; People Domain</a></li>
 </ul>
 </li>
 <li><a href="#_references">References</a></li>
@@ -511,7 +513,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Modified</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2022-03-24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2022-05-03</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Issued</strong></p></td>
@@ -554,12 +556,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>This model is built on a "baseline" of Semantic Web models which use a variety of namespaces. Prefixes for thess namespaces, used througout this document, are listed below.</p>
 </div>
-<table id="tbl-prefixes" class="tableblock frame-none grid-none stripes-even" style="width: 75%;">
+<table id="tbl-prefixes" class="tableblock frame-none grid-none stripes-even stretch">
 <caption class="title">Table 1. Namespaces</caption>
 <colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
+<col style="width: 11.1111%;">
+<col style="width: 44.4444%;">
+<col style="width: 44.4445%;">
 </colgroup>
 <thead>
 <tr>
@@ -639,88 +641,68 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </div>
-<div id="central-class" class="dlist">
-<dl>
-<dt class="hdlist1">Central Class</dt>
-<dd>
-<p><code><a href="https://linked.data.gov.au/def/supermodel/terms/central-class" class="bare">https://linked.data.gov.au/def/supermodel/terms/central-class</a></code></p>
-<div class="paragraph">
-<p>Central Classes are the generic data classes at the centre of Data Domains with high-level relationships between them defined in this supermodel.</p>
-</div>
-<div class="paragraph">
-<p>These classes are taken from general standards - usually well-known international stadnards - and the Indigenous Data Network specialises and extends them to make specific, custom, classes for their needs.</p>
-</div>
-</dd>
-</dl>
-</div>
-<div id="data-domain" class="dlist">
-<dl>
-<dt class="hdlist1">Data Domain</dt>
-<dd>
-<p><code><a href="https://linked.data.gov.au/def/supermodel/terms/data-domain" class="bare">https://linked.data.gov.au/def/supermodel/terms/data-domain</a></code></p>
-<div class="paragraph">
-<p>High-level conceptual areas within which Geosicence Australia has data.</p>
-</div>
-<div class="paragraph">
-<p>These Data Domains are not themed scientificly - 'geology', 'hydrogeology', etc. - but instead based on parts of the <em>Observations &amp; Measurement</em> <a href="#ISO19156">[ISO19156]</a> standard, realised in Semantic Web form in the SOSA Ontology, part of the <em>Semantic Sensor Network Ontology</em> <a href="#SSN">[SSN]</a>.</p>
-</div>
-<div class="paragraph">
-<p>Current Data Domain are shown in <a href="#fig-top-level">Figure 1</a>.</p>
-</div>
-</dd>
-</dl>
-</div>
-<div id="knowledge-graph" class="dlist">
-<dl>
-<dt class="hdlist1">Knowledge Graph</dt>
-<dd>
-<p><code><a href="https://linked.data.gov.au/def/supermodel/terms/knowledge-graph" class="bare">https://linked.data.gov.au/def/supermodel/terms/knowledge-graph</a></code></p>
-<div class="paragraph">
-<p>A Knowledge Graph is a dataset that uses a graph data tructure - nodes and edges - with strongly-defined elements.</p>
-</div>
-</dd>
-</dl>
-</div>
-<div id="linked-data" class="dlist">
-<dl>
-<dt class="hdlist1">Linked Data</dt>
-<dd>
-<p><code><a href="https://linked.data.gov.au/def/supermodel/terms/linked-data" class="bare">https://linked.data.gov.au/def/supermodel/terms/linked-data</a></code></p>
-<div class="paragraph">
-<p>A set of technologies and conventions defined by the <a href="https://www.w3.org">World Wide Web Consortium</a> that aim to present data in both human- and machine-readable form over the Internet.</p>
-</div>
-<div class="paragraph">
-<p>Linked Data is strongly-defined with each element having either a local definition or a link to an available definition on the Internet.</p>
-</div>
-<div class="paragraph">
-<p>Linked Data is graph-based in nature, that is it consistes of nodes and edges that can forever be linked to further conceps with defined relationships.</p>
-</div>
-<div class="paragraph">
-<p>&#8201;&#8212;&#8201;<a href="https://www.w3.org/standards/semanticweb/data" class="bare">https://www.w3.org/standards/semanticweb/data</a></p>
-</div>
-</dd>
-</dl>
-</div>
-<div id="semantic-web" class="dlist">
-<dl>
-<dt class="hdlist1">Semantic Web</dt>
-<dd>
-<p><code><a href="https://linked.data.gov.au/def/supermodel/terms/semantic-web" class="bare">https://linked.data.gov.au/def/supermodel/terms/semantic-web</a></code></p>
-<div class="paragraph">
-<p>The <a href="https://www.w3.org">World Wide Web Consortium</a>'s vision of an Internet-based web of Linked Data.</p>
-</div>
-<div class="paragraph">
-<p>Semantic Web is used to refer to something more than just the technologies and conventions of Linked Data; the term also encompases a specific set of interoperable data models - often called ontologies - published by the W3C, other standards bodies and some well-known companies.</p>
-</div>
-<div class="paragraph">
-<p>The 'semantic' refers to the strongly-defined nature of the elements in the Semantic Web: the meaning of Semantic Web data is as precicely defined as any data can be.</p>
-</div>
-<div class="paragraph">
-<p>&#8201;&#8212;&#8201;<a href="https://www.w3.org/standards/semanticweb/" class="bare">https://www.w3.org/standards/semanticweb/</a></p>
-</div>
-</dd>
-</dl>
-</div>
+<table class="tableblock frame-none grid-none stripes-even stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 50%;">
+<col style="width: 16.6668%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Term</th>
+<th class="tableblock halign-left valign-top">IRI</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+<th class="tableblock halign-left valign-top">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="central-class"></a> <strong>Central Class</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/supermodel/terms/central-class"><code>td:central-class</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Central Classes are the generic data classes at the centre of Data Domains with high-level relationships between them defined in this supermodel.</p>
+<p class="tableblock">These classes are taken from general standards - usually well-known international stadnards - and the Indigenous Data Network specialises and extends them to make specific, custom, classes for their needs.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supermodel model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="component-data-model"></a> <strong>Component Data Model</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/supermodel/terms/component-data-model"><code>td:component-data-model</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A data model for a particular component of a Supermodel. The Component Data Model may have been designed for a particular Supermodel that uses t but it may also pre-exist and it just indicated for use within the Supermodel.</p>
+<p class="tableblock">A Supermodel will always need to provide mappings from classes within a Component Data Model to other Supermodel elements for interoperability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supermodel model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="data-domain"></a> <strong>Data Domain</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/supermodel/terms/data-domain"><code>td:data-domain</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High-level conceptual areas within which Geosicence Australia has data.</p>
+<p class="tableblock">These Data Domains are not themed scientificly - 'geology', 'hydrogeology', etc. - but instead based on parts of the <em>Observations &amp; Measurement</em> <a href="#ISO19156">[ISO19156]</a> standard, realised in Semantic Web form in the SOSA Ontology, part of the <em>Semantic Sensor Network Ontology</em> <a href="#SSN">[SSN]</a>.</p>
+<p class="tableblock">Current Data Domain are shown in <a href="#fig-top-level">Figure 1</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Supermodel model</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="knowledge-graph"></a> <strong>Knowledge Graph</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/supermodel/terms/knowledge-graph"><code>td:knowledge-graph</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A Knowledge Graph is a dataset that uses a graph data tructure - nodes and edges - with strongly-defined elements.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Common use, e.g. <a href="https://en.wikipedia.org/wiki/Knowledge_graph" class="bare">https://en.wikipedia.org/wiki/Knowledge_graph</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="linked-data"></a> <strong>Linked Data</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/supermodel/terms/linked-data"><code>td:linked-data</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A set of technologies and conventions defined by the <a href="https://www.w3.org">World Wide Web Consortium</a> that aim to present data in both human- and machine-readable form over the Internet.</p>
+<p class="tableblock">Linked Data is strongly-defined with each element having either a local definition or a link to an available definition on the Internet.</p>
+<p class="tableblock">Linked Data is graph-based in nature, that is it consistes of nodes and edges that can forever be linked to further conceps with defined relationships.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/standards/semanticweb/data" class="bare">https://www.w3.org/standards/semanticweb/data</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="semantic-web"></a> <strong>Semantic Web</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://linked.data.gov.au/def/supermodel/terms/semantic-web"><code>td:semantic-web</code></a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The <a href="https://www.w3.org">World Wide Web Consortium</a>'s vision of an Internet-based web of Linked Data.</p>
+<p class="tableblock">Semantic Web is used to refer to something more than just the technologies and conventions of Linked Data; the term also encompases a specific set of interoperable data models - often called ontologies - published by the W3C, other standards bodies and some well-known companies.</p>
+<p class="tableblock">The 'semantic' refers to the strongly-defined nature of the elements in the Semantic Web: the meaning of Semantic Web data is as precicely defined as any data can be.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/standards/semanticweb/" class="bare">https://www.w3.org/standards/semanticweb/</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_conventions">2.4. Conventions</h3>
@@ -736,24 +718,44 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_introduction">3. Introduction</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_supermodel_structure">3.1. Supermodel Structure</h3>
 <div class="paragraph">
-<p>This model described a set of <a href="#data-domain">Data Domains</a> with <a href="#central-class">Central Classes</a> that are associated using <a href="#linked-data">Linked Data</a> principles. Specialisations of the Central Classes are made to cater for particular data needs.</p>
+<p>Supermodels, such as this one, consist of a set of <a href="#component-data-model">Component Data Models</a> instances within <a href="#data-domain">Data Domains</a> needed for various purposes. This Supermodel identifies the  <a href="#central-class">Central Classes</a> within each Data Domain and associates them with one another - across Data Domains - and with other classes within Data Domains using <a href="#linked-data">Linked Data</a> principles.</p>
 </div>
 <div class="paragraph">
-<p>Altogether, these things form a <a href="#knowledge-graph">Knowledge Graph</a> of data for the Indigenous Data Network (IDN) that participates in the wider, international, <a href="#semantic-web">Semantic Web</a>.</p>
+<p>Altogether, the various Component Data Models, Central Classes these things form a <a href="#knowledge-graph">Knowledge Graph</a> of data for the Indigenous Data Network (IDN) that participates in the wider, international, <a href="#semantic-web">Semantic Web</a>.</p>
 </div>
 <div class="paragraph">
-<p>This model is predicated on an assumption that the IDN is a data aggregation organisation and therefore data cataloguing is its major concern. At the centre of this model then is a domain of <code>Data Cataloguing</code>, the main elements of which are taken from the <em>Data Catalog Vocabulary</em> (<a href="#DCAT">[DCAT]</a>). The things that IDN&#8217;s data are mostly about are spatial things, hence a Data Domain of <code>Spatiality</code>, for which the <em>GeoSPARQL</em> <a href="#GEO">[GEO]</a> is core. The way IDN generates information about spatial things is via observations and various forms of sampling, hence a Data Domain of <code>Sampling</code> and for this one the <em>Sensor, Observation, Sample, and Actuator</em> (SOSA) ontology <a href="#SSN">[SSN]</a> is mainly used as it which focuseses on observations and how they produce results, what the results are about and so on. IDN&#8217;s data is cetegorised in various ways and for this the Data Domain of <code>Theming</code> is indicated. Within it, taxonomy representation using <a href="#SKOS">[SKOS]</a> is paramount. Finally, all organisations relate their data and processes to thus who are responsible for them, thus the final Data Domain is indeed <code>Organisations and People</code> which is modelled using a number of models such as <a href="#DCTERMS">[DCTERMS]</a>, <a href="#PROV">[PROV]</a> and <a href="#SDO">[SDO]</a>.</p>
+<p>All Component Data Models and this Supermodel itself are modelled using the <em>Web Ontology Language</em> <a href="#OWL">[OWL]</a> and specailisations of it, such as the <em>Simple Knowledge Observation System</em> <a href="#SKOS">[SKOS]</a> which is used for modelling taxonomies of concepts. As well as the textual and image descriptions of this model here, machine-readable versions of this model and all Component Data Models are available in the Turtle <a href="#TTL">[TTL]</a> RDF format. See the <a href="#_metadata">Metadata</a> section for the Supermodel Turtle file and each Component Data Model&#8217;s metadata.</p>
 </div>
-<div class="paragraph">
-<p>These models are also all Semantic Web models and they have been selected for their easy interoperability.</p>
-</div>
-<div class="paragraph">
-<p>All elements of this model are modelled using the <em>Web Ontology Language</em> <a href="#OWL">[OWL]</a> and specailisations of it, such as the <em>Simple Knowledge Observation System</em> <a href="#SKOS">[SKOS]</a> which is used for modelling taxonomies of concepts. As well as the textual and image descriptions of the model here, in the next Section, a machine-readable version of this model is available (see <a href="#_metadata">Metadata</a>).</p>
 </div>
 <div class="sect2">
-<h3 id="_uses">3.1. Uses</h3>
-
+<h3 id="_idn_data_domains">3.2. IDN Data Domains</h3>
+<div class="paragraph">
+<p>This IDN Supermodel is predicated on an assumption that the IDN is a data aggregation organisation and therefore data cataloguing is its major concern. At the centre of this model then is a domain of <a href="#_data_cataloguing_domain">Data Cataloguing</a>, the main elements of which are taken from the <em>Data Catalog Vocabulary</em> <a href="#DCAT">[DCAT]</a>. Many Supermodels have this as one of their Data Domains</p>
+</div>
+<div class="paragraph">
+<p>The IDN is expected to contain datasets with information about Indigenous Australian people sampled, "observed", from census and other population data, so the domain of <a href="#_observations_domain">Observations</a> is provided and it uses the <em>Data Cube Vocabulary</em> <a href="#QB">[QB]</a> as its core. QB is a statistical/sampling slicing and dimensions model. Other Supermodels use variations on this domain such as "Sampleing" where the sampling/observation is physical, not statistical.</p>
+</div>
+<div class="paragraph">
+<p>Some of the IDN&#8217;s data is spatial - the location of Indigenous Australian peoples, landforms etc. - hence a Data Domain of <a href="#_spatiality_domain">Spatiality</a> is provided, for which the <em>GeoSPARQL</em> <a href="#GEO">[GEO]</a> is the modelling core. Spatiality is the predominant Data Domain of some other Supermodels, such as the <a href="https://geoscienceaustralia.github.io/loci-supermodel/supermodel.html">LocI Supermodel</a>.</p>
+</div>
+<div class="paragraph">
+<p>Like all Supermodels, the IDN&#8217;s data is cetegorised in various ways and for this the Data Domain of <a href="#_theming_domain">Theming</a> is provided. Within it, taxonomy representation using <a href="#SKOS">[SKOS]</a> is paramount.</p>
+</div>
+<div class="paragraph">
+<p>Finally, and again like all Supermodels, the IDM must relate organisations and people to its contents (data) and maintain knowledge of organisations and the relationships between them so the Data Domain &lt;Organisations &amp; People Domain, Organisations &amp; People&gt;&gt; is presented which is modelled using a number of well-known Semantic Web models, in particular schema.org <a href="#SDO">[SDO]</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_uses">3.3. Uses</h3>
+<div class="paragraph">
+<p>This Supermodel can be used as a technial reference for all elements of the IDN&#8217;s modelling. Using this document, an IDN technical modeller or data user should be able to discover how each compoennt domain of the IDN has been modelled and how they relate to all other component domains.</p>
+</div>
+<div class="paragraph">
+<p>Data from any IDN component domain, and the model elements of the Supermodel also, can be placed into a single RDF database for querying.</p>
+</div>
 </div>
 </div>
 </div>
@@ -855,33 +857,33 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_level_1_data_domains">4.2. Level 1: Data Domains</h3>
 <div class="paragraph">
-<p>The top-level view of the IDN supermodel that assumes Level 0 background mechanics shows a set of 5 <a href="#data-domain">Data Domains</a> which are:</p>
+<p><a href="#data-comain">Data Domains</a> are a Supermodel&#8217;s major areas of concern and Level 1 just presents them with no further details. The Data Doamins defined for the IDN so far are:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><a href="https://linked.data.gov.au/def/supermodel/data-domains/sampling">Observations</a></p>
+<p><a href="#_data_cataloguing_domain">Data Cataloguing</a></p>
 </li>
 <li>
-<p><a href="https://linked.data.gov.au/def/supermodel/data-domains/data-cataloguing">Data Cataloguing</a></p>
+<p><a href="#_observations_domain">Observations</a></p>
 </li>
 <li>
-<p><a href="https://linked.data.gov.au/def/supermodel/data-domains/organisations-people">Organisations &amp; People</a></p>
+<p><a href="#_spatiality_domain">Spatiality</a></p>
 </li>
 <li>
-<p><a href="https://linked.data.gov.au/def/supermodel/data-domains/spatiality">Spatiality</a></p>
+<p><a href="#_theming_domain">Theming</a></p>
 </li>
 <li>
-<p><a href="https://linked.data.gov.au/def/supermodel/data-domains/theming">Theming</a></p>
+<p><a href="#_organisations_people_domain">Organisations &amp; People</a></p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>These are shown in <a href="#fig-top-level">Figure 1</a> below.</p>
+<p>These are shown in <a href="#fig-data-domains">Figure 1</a> below.</p>
 </div>
-<div id="fig-top-level" class="imageblock">
+<div id="fig-data-domains" class="imageblock">
 <div class="content">
-<img src="img/data-domains.png" alt="data domains">
+<img src="img/data-domains.png" alt="data domains" width="70%">
 </div>
 <div class="title">Figure 4. Top-level view of the IDN Supermodel showing Data Domains</div>
 </div>
@@ -889,18 +891,36 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect2">
 <h3 id="_level_2_central_classes">4.3. Level 2: Central Classes</h3>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p><a href="#central-class">Central Classes</a> are the major model classes within each Data Domain and Level 2 shows the Data Domains with these classes, and the main relationships between them, indicated. These relationships are used to traverse across Data Domains.</p>
+</div>
+<div class="paragraph">
+<p>These are shown in <a href="#fig-central-classes">Figure 2</a> below.</p>
+</div>
+<div id="fig-central-classes" class="imageblock">
+<div class="content">
+<img src="img/central-classes.png" alt="central classes" width="75%">
+</div>
+<div class="title">Figure 5. Central Classes of the Data Domains and their major relationships. Those as of now still undefined are indicated as ---???---</div>
+</div>
+<div class="paragraph">
+<p>Not all of the relationships between Central Classes have been formalised yet. As they are formaliused, they will be indicated in <a href="#fig-central-classes">Figure 2</a> above.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_level_3_domain_main_classes">4.4. Level 3: Domain Main Classes</h3>
+<h3 id="_level_3_domain_main_modelling">4.4. Level 3: Domain Main Modelling</h3>
+<div class="paragraph">
+<p>Top-level modelling within Data Domains - representations of their major concepts and relationships - are given at Level 3 of the Supermodel. The following Subsections indicate such modelling for each Data Domain.</p>
+</div>
+<div class="paragraph">
+<p>These Domain Main Models can be used to ascertain whether or not a Supermodel covers particular aspects of a Data Domain. They also indicate which Component Data Models are used per Data Domain via their various classes which might come from several.</p>
+</div>
 <div class="sect3">
 <h4 id="_data_catalouging_domain">4.4.1. Data Catalouging Domain</h4>
 <div id="fig-datacataloguing" class="imageblock">
 <div class="content">
 <img src="img/main-classes-data-cataloguing.png" alt="main classes data cataloguing">
 </div>
-<div class="title">Figure 5. Central Classes of the Data Cataloguing Domain</div>
+<div class="title">Figure 6. Central Classes of the Data Cataloguing Domain</div>
 </div>
 </div>
 <div class="sect3">
@@ -909,7 +929,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <img src="img/main-classes-observations.png" alt="main classes observations">
 </div>
-<div class="title">Figure 6. Central Classes of the Observations Domain</div>
+<div class="title">Figure 7. Central Classes of the Observations Domain</div>
 </div>
 </div>
 <div class="sect3">
@@ -918,7 +938,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <img src="img/main-classes-organisations.png" alt="main classes organisations">
 </div>
-<div class="title">Figure 7. Central Classes of the Organisations &amp; People Domain</div>
+<div class="title">Figure 8. Central Classes of the Organisations &amp; People Domain</div>
 </div>
 </div>
 </div>
@@ -939,7 +959,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <img src="img/details-datacataloguing.png" alt="details datacataloguing">
 </div>
-<div class="title">Figure 8. Data Cataloguing Model, based on DCAT &amp; PROV</div>
+<div class="title">Figure 9. Data Cataloguing Model, based on DCAT &amp; PROV</div>
 </div>
 </div>
 <div class="sect2">
@@ -951,11 +971,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <img src="img/details-observations.png" alt="details observations">
 </div>
-<div class="title">Figure 9. Observations Model, based on <a href="https://www.w3.org/TR/vocab-data-cube/#fig-pictorial-summary-of-key-terms-and-their-relationship">Data Cube Vocabulary overview</a></div>
+<div class="title">Figure 10. Observations Model, based on <a href="https://www.w3.org/TR/vocab-data-cube/#fig-pictorial-summary-of-key-terms-and-their-relationship">Data Cube Vocabulary overview</a></div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_organisations_people_domain">5.3. Organisations &amp; People Domain</h3>
+<h3 id="_spatiality_domain">5.3. Spatiality Domain</h3>
+<div class="paragraph">
+<p><strong>TODO</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_theming_domain">5.4. Theming Domain</h3>
+<div class="paragraph">
+<p><strong>TODO</strong></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_organisations_people_domain">5.5. Organisations &amp; People Domain</h3>
 <div class="paragraph">
 <p>This domain is essentially the organization modelling element of <a href="https://schema.org">schema.org</a> with a few additional properties to track some IDN-relevant aspects of an organisation. The essential model is shown in <a href="#org-model">Figure 10</a>.</p>
 </div>
@@ -963,19 +995,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <img src="img/details-organisations.png" alt="details organisations">
 </div>
-<div class="title">Figure 10. IDN Organisation Model, based on schema.org</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_spatiality_domain">5.4. Spatiality Domain</h3>
-<div class="paragraph">
-<p><strong>TODO</strong></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_theming_domain">5.5. Theming Domain</h3>
-<div class="paragraph">
-<p><strong>TODO</strong></p>
+<div class="title">Figure 11. IDN Organisation Model, based on schema.org</div>
 </div>
 </div>
 </div>
@@ -986,52 +1006,49 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p><a id="ABIS"></a> Department of Agriculture, Water and the Enviroment, <em>Australia Biodiversity Information Standard (ABIS)</em>, Australian government Semantic Web Standard (2022-01-14). <a href="https://linked.data.gov.au/def/abis" class="bare">https://linked.data.gov.au/def/abis</a></p>
+<p><a id="ABIS"></a> [ABIS] Department of Agriculture, Water and the Enviroment, <em>Australia Biodiversity Information Standard (ABIS)</em>, Australian government Semantic Web Standard (2022-01-14). <a href="https://linked.data.gov.au/def/abis" class="bare">https://linked.data.gov.au/def/abis</a></p>
 </li>
 <li>
-<p><a id="DQ"></a> World Wide Web Consortium, <em>The RDF Data Cube Vocabulary</em>, W3C Recommendation (16 January 2014). <a href="http://www.w3.org/TR/vocab-data-cube/" class="bare">http://www.w3.org/TR/vocab-data-cube/</a></p>
+<p><a id="DCTERMS"></a> [DCTERMS] DCMI Usage Board, <em>DCMI Metadata Terms</em>, A DCMI Recommendation (2020-01-20). <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" class="bare">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></p>
 </li>
 <li>
-<p><a id="DCTERMS"></a> DCMI Usage Board, <em>DCMI Metadata Terms</em>, A DCMI Recommendation (2020-01-20). <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" class="bare">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></p>
+<p><a id="DCAT"></a> [DCAT] World Wide Web Consortium, <em>Data Catalog Vocabulary (DCAT) - Version 2</em>, W3C Working Group Note (04 February 2020). <a href="https://www.w3.org/TR/vocab-dcat/" class="bare">https://www.w3.org/TR/vocab-dcat/</a></p>
 </li>
 <li>
-<p><a id="DCAT"></a> World Wide Web Consortium, <em>Data Catalog Vocabulary (DCAT) - Version 2</em>, W3C Working Group Note (04 February 2020). <a href="https://www.w3.org/TR/vocab-dcat/" class="bare">https://www.w3.org/TR/vocab-dcat/</a></p>
+<p><a id="GEO"></a> [GEO] Open Geospatial Consortium, <em>OGC GeoSPARQL - A Geographic Query Language for RDF Data, Version 1.1</em> (2021). OGC Implementation Specification. <a href="http://www.opengis.net/doc/IS/geosparql/1.1" class="bare">http://www.opengis.net/doc/IS/geosparql/1.1</a></p>
 </li>
 <li>
-<p><a id="GEO"></a> Open Geospatial Consortium, <em>OGC GeoSPARQL - A Geographic Query Language for RDF Data, Version 1.1</em> (2021). OGC Implementation Specification. <a href="http://www.opengis.net/doc/IS/geosparql/1.1" class="bare">http://www.opengis.net/doc/IS/geosparql/1.1</a></p>
+<p><a id="ISO19156"></a> [ISO19156] International Organization for Standardization, <em>ISO 19156: Geographic information — Observations and measurements</em> (2011)</p>
 </li>
 <li>
-<p><a id="ISO19156"></a> International Organization for Standardization, <em>ISO 19156: Geographic information — Observations and measurements</em> (2011)</p>
+<p><a id="OWL"></a> [OWL] World Wide Web Consortium, <em>OWL 2 Web Ontology Language Document Overview (Second Edition)</em>, W3C Recommendation (11 December 2012). <a href="https://www.w3.org/TR/owl2-overview/" class="bare">https://www.w3.org/TR/owl2-overview/</a></p>
 </li>
 <li>
-<p><a id="OWL"></a> World Wide Web Consortium, <em>OWL 2 Web Ontology Language Document Overview (Second Edition)</em>, W3C Recommendation (11 December 2012). <a href="https://www.w3.org/TR/owl2-overview/" class="bare">https://www.w3.org/TR/owl2-overview/</a></p>
+<p><a id="PROF"></a> [PROF] World Wide Web Consortium, <em>The Profiles Vocabulary</em>, W3C Working Group Note (18 December 2019). <a href="https://www.w3.org/TR/dx-prof/" class="bare">https://www.w3.org/TR/dx-prof/</a></p>
 </li>
 <li>
-<p><a id="PROF"></a> World Wide Web Consortium, <em>The Profiles Vocabulary</em>, W3C Working Group Note (18 December 2019). <a href="https://www.w3.org/TR/dx-prof/" class="bare">https://www.w3.org/TR/dx-prof/</a></p>
+<p><a id="PROV"></a> [PROV] World Wide Web Consortium, <em>PROV-O: The PROV Ontology</em>, W3C Working Group Note (18 December 2019). <a href="https://www.w3.org/TR/prov-o/" class="bare">https://www.w3.org/TR/prov-o/</a></p>
 </li>
 <li>
-<p><a id="PROV"></a> World Wide Web Consortium, <em>PROV-O: The PROV Ontology</em>, W3C Working Group Note (18 December 2019). <a href="https://www.w3.org/TR/prov-o/" class="bare">https://www.w3.org/TR/prov-o/</a></p>
+<p><a id="QB"></a> [QB] World Wide Web Consortium, <em>The RDF Data Cube Vocabulary</em>, W3C Recommendation (16 January 2014). <a href="http://www.w3.org/TR/vocab-data-cube/" class="bare">http://www.w3.org/TR/vocab-data-cube/</a></p>
 </li>
 <li>
-<p><a id="SAM"></a> Cox, S.J.D., <em>OWL representation of ISO 19156 Sampling Features model</em>. (2014). Online at: <a href="https://surroundaustralia.github.io/ga-supermodel/sam-lite.html" class="bare">https://surroundaustralia.github.io/ga-supermodel/sam-lite.html</a>, accessed 2022-03-02</p>
+<p><a id="SDO"></a> [SDO] W3C Schema.org Community Group, <em>schema.org</em>. Community ontology (2015). <a href="https://schema.org" class="bare">https://schema.org</a></p>
 </li>
 <li>
-<p><a id="SDO"></a> W3C Schema.org Community Group, <em>schema.org</em>. Community ontology (2015). <a href="https://schema.org" class="bare">https://schema.org</a></p>
+<p><a id="SSN"></a> [SSN] World Wide Web Consortium, <em>Semantic Sensor Network Ontology</em>, W3C Recommendation (19 October 2017). <a href="https://www.w3.org/TR/vocab-ssn/" class="bare">https://www.w3.org/TR/vocab-ssn/</a></p>
 </li>
 <li>
-<p><a id="SSN"></a> World Wide Web Consortium, <em>Semantic Sensor Network Ontology</em>, W3C Recommendation (19 October 2017). <a href="https://www.w3.org/TR/vocab-ssn/" class="bare">https://www.w3.org/TR/vocab-ssn/</a></p>
+<p><a id="SKOS"></a> [SKOS] World Wide Web Consortium, <em>SKOS Simple Knowledge Organization System Reference</em>, W3C Recommendation (18 August 2009). <a href="https://www.w3.org/TR/skos-reference/" class="bare">https://www.w3.org/TR/skos-reference/</a></p>
 </li>
 <li>
-<p><a id="SKOS"></a> World Wide Web Consortium, <em>SKOS Simple Knowledge Organization System Reference</em>, W3C Recommendation (18 August 2009). <a href="https://www.w3.org/TR/skos-reference/" class="bare">https://www.w3.org/TR/skos-reference/</a></p>
+<p><a id="TERN"></a> [TERN] Terrestrinal Ecosystems Research Network, <em>TERN Ontology</em>, Organisation ontology (2022). <a href="https://linkeddata.tern.org.au/viewers/tern-ontology" class="bare">https://linkeddata.tern.org.au/viewers/tern-ontology</a></p>
 </li>
 <li>
-<p><a id="TERN"></a> Terrestrinal Ecosystems Research Network, <em>TERN Ontology</em>, Organisation ontology (2022). <a href="https://linkeddata.tern.org.au/viewers/tern-ontology" class="bare">https://linkeddata.tern.org.au/viewers/tern-ontology</a></p>
+<p><a id="TTL"></a> [TTL] World Wide Web Consortium, <em>RDF 1.1 Turtle Terse RDF Triple Language</em>, W3C Recommendation (25 February 2014). <a href="https://www.w3.org/TR/turtle/" class="bare">https://www.w3.org/TR/turtle/</a></p>
 </li>
 <li>
-<p><a id="TTL"></a> World Wide Web Consortium, <em>RDF 1.1 Turtle Terse RDF Triple Language</em>, W3C Recommendation (25 February 2014). <a href="https://www.w3.org/TR/turtle/" class="bare">https://www.w3.org/TR/turtle/</a></p>
-</li>
-<li>
-<p><a id="VOCPUB"></a> SURROUND Australia Pty Ltd, <em>VocPub</em>, Profile of SKOS (14 June 2020). <a href="https://w3id.org/profile/vocpub" class="bare">https://w3id.org/profile/vocpub</a></p>
+<p><a id="VOCPUB"></a> VOCPUB] SURROUND Australia Pty Ltd, <em>VocPub</em>, Profile of SKOS (14 June 2020). <a href="https://w3id.org/profile/vocpub" class="bare">https://w3id.org/profile/vocpub</a></p>
 </li>
 </ul>
 </div>
@@ -1046,7 +1063,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-04-27 01:43:47 UTC
+Last updated 2022-05-03 04:59:45 UTC
 </div>
 </div>
 </body>
