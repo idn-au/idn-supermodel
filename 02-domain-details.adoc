@@ -18,6 +18,14 @@ This domain is essentially the Data Cube Vocabulary <<DQ>>'s core elements with 
 .Observations Model, based on https://www.w3.org/TR/vocab-data-cube/#fig-pictorial-summary-of-key-terms-and-their-relationship[Data Cube Vocabulary overview]
 image::img/details-observations.png[]
 
+=== Spatiality Domain
+
+**TODO**
+
+=== Theming Domain
+
+**TODO**
+
 === Organisations & People Domain
 
 This domain is essentially the organization modelling element of https://schema.org[schema.org] with a few additional properties to track some IDN-relevant aspects of an organisation. The essential model is shown in <<org-model, Figure 10>>.
@@ -26,10 +34,3 @@ This domain is essentially the organization modelling element of https://schema.
 .IDN Organisation Model, based on schema.org
 image::img/details-organisations.png[]
 
-=== Spatiality Domain
-
-**TODO**
-
-=== Theming Domain
-
-**TODO**
