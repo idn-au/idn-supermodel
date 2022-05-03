@@ -9,7 +9,7 @@
 |===
 |**IRI** | https://linked.data.gov.au/def/idn-supermodel 
 
-_Note the IRI for this data model being in a gov.au domain will require endorsement by IIRC governance processes_
+_Note the published IRI for this data model will be subject to approval of https://ardc.edu.au/wp-content/uploads/2021/11/Indigenous-Research-Capability-Revised-project-plan-Oct-2021.pdf#page=21[IDN-ARDC IIRC Project governance processes] and will reflect the long term sustainability model for the specification. Nothing normative should be inferred from the initial IRI being in a gov.au domain._
 |**Editor's Draft** | http://idnau.org/def/sm 
 
 _The "under development" and latest version of the IDN Supermodel_
