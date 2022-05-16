@@ -8,7 +8,9 @@
 
 * [[GEO]] [GEO] Open Geospatial Consortium, _OGC GeoSPARQL - A Geographic Query Language for RDF Data, Version 1.1_ (2021). OGC Implementation Specification. http://www.opengis.net/doc/IS/geosparql/1.1
 
-* [[ISO19156]] [ISO19156] International Organization for Standardization, _ISO 19156: Geographic information — Observations and measurements_ (2011)
+* [[ISO19115]] [ISO19115] International Organization for Standardization, ISO 19115-1:2014 Geographic information — Metadata — Part 1: Fundamentals (2014) https://www.iso.org/standard/53798.html
+
+* [[ISO19156]] [ISO19156] International Organization for Standardization, _ISO 19156: Geographic information — Observations and measurements_ (2011) https://www.iso.org/standard/32574.html
 
 * [[OWL]] [OWL] World Wide Web Consortium, _OWL 2 Web Ontology Language Document Overview (Second Edition)_, W3C Recommendation (11 December 2012). https://www.w3.org/TR/owl2-overview/
 

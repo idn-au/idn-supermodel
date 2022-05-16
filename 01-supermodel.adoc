@@ -2,8 +2,19 @@
 :toc: left
 :table-stripes: even
 :sectnums:
+:sectids:
+:sectanchors:
+
+== Abstract
+
+This Model - the IDN Supermodel - is the Indigenous Data Network's overarching data model that provides modelling patterns and integration logic for data elements in several specialised domains. With this model, you can test whether an area of concern for the IDN is formally modelled using Semantic Web technologies and, if it is, whether or not you can relate model elements to other IDN information. 
+
+This Supermodel is formulated similarly to other Supermodels in other, semi-related, scenarios such as https://www.ga.gov.au[Geoscience Australia]'s Supermodel for the https://surroundaustralia.github.io/loci-supermodel/supermodel.html[Location Index] initiative.
+
 
 == Metadata
+
+This metadata is for this document.
 
 [width=75%, frame=none, grid=none, cols="1,5"]
 |===
@@ -14,9 +25,9 @@ _Note the published IRI for this data model will be subject to approval of https
 
 _The "under development" and latest version of the IDN Supermodel_
 |**Title** | Indigenous Data Network Australia Supermodel Specifciation
-|**Description** | This Model - the IDN Supermodel - is the Indigenous Data Network's overarching data model that provides integration logic for data elements in many of its specialised domains.
+|**Description** | This Model - the IDN Supermodel - is the Indigenous Data Network's overarching data model that provides modelling patterns and integration logic for data elements in several specialised domains.
 |**Created** | 2022-03-02
-|**Modified** | 2022-05-03
+|**Modified** | 2022-05-16
 |**Issued** | 0000-00-00
 |**Creator** | https://linked.data.gov.au/org/idn[Indigenous Data Network]
 |**Publisher** | https://linked.data.gov.au/org/idn[Indigenous Data Network]
@@ -25,12 +36,6 @@ _The "under development" and latest version of the IDN Supermodel_
 |===
 
 == Preamble
-
-=== Abstract
-
-This Model - the IDN Supermodel - is the Indigenous Data Network's overarching data model that provides integration logic for data elements in many of its specialised domains. 
-
-This Supermodel is formulated similarly to other Supermodels in other, semi-related, scenarios such as https://www.ga.gov.au[Geoscience Australia]'s Supermodel for the https://surroundaustralia.github.io/loci-supermodel/supermodel.html[Location Index] initiative.
 
 === Namespaces
 
@@ -215,6 +220,8 @@ image::img/central-classes.png[]
 
 Not all of the relationships between Central Classes have been formalised yet. As they are formaliused, they will be indicated in <<fig-central-classes, Figure 2>> above.
 
+Note that the relationship between `Dataset` in the _Data Catalouging Domain_ and `Agent` in the _Organisations & People Domain_ is indicated at this level as using a `prov:qualifiedAttribution`. While other Supermodels https://surroundaustralia.github.io/loci-supermodel/supermodel.html#_level_2_central_classes[indicate simple attribution for this relationship], this IDN modelling uses this particular qualified pattern to allow for role-based  data/agent relations.
+
 === Level 3: Domain Main Modelling
 
 Top-level modelling within Data Domains - representations of their major concepts and relationships - are given at Level 3 of the Supermodel. The following Subsections indicate such modelling for each Data Domain.
@@ -227,6 +234,8 @@ These Domain Main Models can be used to ascertain whether or not a Supermodel co
 .Central Classes of the Data Cataloguing Domain
 image::img/main-classes-data-cataloguing.png[]
 
+While the agent/role `Attribution` modelling within this Domain, as shown in <<fig-datacataloguing, Figure 6>>, is handled in a standard way here which is according to <<PROV>> and <<DCAT>>, it is brought to the fore in this Supermodel whereas it isn't in others, such as the https://surroundaustralia.github.io/ga-supermodel/supermodel.html[GA Supermodel]. This is because, in the IDN, attribution of data to groups and persons with defined roles is a very important concern. 
+
 ==== Observations Domain
 
 [id=fig-observations]
@@ -235,12 +244,26 @@ image::img/main-classes-observations.png[]
 
 ==== Organisations & People
 
-[id=orgs]
+[id=fig-orgs]
 .Central Classes of the Organisations & People Domain
 image::img/main-classes-organisations.png[]
+
+==== Spatiality
+
+[id=fig-spatiality]
+.Central Classes of the Spatiality Domain
+image::img/main-classes-spatiality.png[]
+
+==== Theming
+
+[id=fig-theming]
+.Central Classes of the Theming Domain
+image::img/main-classes-theming.png[]
 
 include::02-domain-details.adoc[]
 
 :sectnums!:
+
+include::98-annex-a-vocabs.adoc[]
 
 include::99-references.adoc[]
