@@ -442,37 +442,43 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_metadata">1. Metadata</a></li>
-<li><a href="#_preamble">2. Preamble</a>
+<li><a href="#_abstract">1. Abstract</a></li>
+<li><a href="#_metadata">2. Metadata</a></li>
+<li><a href="#_preamble">3. Preamble</a>
 <ul class="sectlevel2">
-<li><a href="#_abstract">2.1. Abstract</a></li>
-<li><a href="#_namespaces">2.2. Namespaces</a></li>
-<li><a href="#_terms_definitions">2.3. Terms &amp; Definitions</a></li>
-<li><a href="#_conventions">2.4. Conventions</a></li>
+<li><a href="#_namespaces">3.1. Namespaces</a></li>
+<li><a href="#_terms_definitions">3.2. Terms &amp; Definitions</a></li>
+<li><a href="#_conventions">3.3. Conventions</a></li>
 </ul>
 </li>
-<li><a href="#_introduction">3. Introduction</a>
+<li><a href="#_introduction">4. Introduction</a>
 <ul class="sectlevel2">
-<li><a href="#_supermodel_structure">3.1. Supermodel Structure</a></li>
-<li><a href="#_idn_data_domains">3.2. IDN Data Domains</a></li>
-<li><a href="#_uses">3.3. Uses</a></li>
+<li><a href="#_supermodel_structure">4.1. Supermodel Structure</a></li>
+<li><a href="#_idn_data_domains">4.2. IDN Data Domains</a></li>
+<li><a href="#_uses">4.3. Uses</a></li>
 </ul>
 </li>
-<li><a href="#_model">4. Model</a>
+<li><a href="#_model">5. Model</a>
 <ul class="sectlevel2">
-<li><a href="#_level_0_model_background">4.1. Level 0: Model Background</a></li>
-<li><a href="#_level_1_data_domains">4.2. Level 1: Data Domains</a></li>
-<li><a href="#_level_2_central_classes">4.3. Level 2: Central Classes</a></li>
-<li><a href="#_level_3_domain_main_modelling">4.4. Level 3: Domain Main Modelling</a></li>
+<li><a href="#_level_0_model_background">5.1. Level 0: Model Background</a></li>
+<li><a href="#_level_1_data_domains">5.2. Level 1: Data Domains</a></li>
+<li><a href="#_level_2_central_classes">5.3. Level 2: Central Classes</a></li>
+<li><a href="#_level_3_domain_main_modelling">5.4. Level 3: Domain Main Modelling</a></li>
 </ul>
 </li>
-<li><a href="#_data_domains_details">5. Data Domains Details</a>
+<li><a href="#_data_domains_details">6. Data Domains Details</a>
 <ul class="sectlevel2">
-<li><a href="#_data_cataloguing_domain">5.1. Data Cataloguing Domain</a></li>
-<li><a href="#_observations_domain_2">5.2. Observations Domain</a></li>
-<li><a href="#_spatiality_domain">5.3. Spatiality Domain</a></li>
-<li><a href="#_theming_domain">5.4. Theming Domain</a></li>
-<li><a href="#_organisations_people_domain">5.5. Organisations &amp; People Domain</a></li>
+<li><a href="#_data_cataloguing_domain">6.1. Data Cataloguing Domain</a></li>
+<li><a href="#_observations_domain_2">6.2. Observations Domain</a></li>
+<li><a href="#_spatiality_domain">6.3. Spatiality Domain</a></li>
+<li><a href="#_theming_domain">6.4. Theming Domain</a></li>
+<li><a href="#_organisations_people_domain">6.5. Organisations &amp; People Domain</a></li>
+</ul>
+</li>
+<li><a href="#_annex_a_vocabularies">Annex A: Vocabularies</a>
+<ul class="sectlevel2">
+<li><a href="#_iso19115_1_role_codes">ISO19115-1 Role Codes</a></li>
+<li><a href="#_indigenous_data_governance_roles">Indigenous Data Governance Roles</a></li>
 </ul>
 </li>
 <li><a href="#_references">References</a></li>
@@ -481,8 +487,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_metadata">1. Metadata</h2>
+<h2 id="_abstract"><a class="anchor" href="#_abstract"></a>1. Abstract</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>This Model - the IDN Supermodel - is the Indigenous Data Network&#8217;s overarching data model that provides modelling patterns and integration logic for data elements in several specialised domains. With this model, you can test whether an area of concern for the IDN is formally modelled using Semantic Web technologies and, if it is, whether or not you can relate model elements to other IDN information.</p>
+</div>
+<div class="paragraph">
+<p>This Supermodel is formulated similarly to other Supermodels in other, semi-related, scenarios such as <a href="https://www.ga.gov.au">Geoscience Australia</a>'s Supermodel for the <a href="https://surroundaustralia.github.io/loci-supermodel/supermodel.html">Location Index</a> initiative.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_metadata"><a class="anchor" href="#_metadata"></a>2. Metadata</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This metadata is for this document.</p>
+</div>
 <table class="tableblock frame-none grid-none stripes-even" style="width: 75%;">
 <colgroup>
 <col style="width: 16.6666%;">
@@ -505,7 +525,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Description</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">This Model - the IDN Supermodel - is the Indigenous Data Network&#8217;s overarching data model that provides integration logic for data elements in many of its specialised domains.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This Model - the IDN Supermodel - is the Indigenous Data Network&#8217;s overarching data model that provides modelling patterns and integration logic for data elements in several specialised domains.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Created</strong></p></td>
@@ -513,7 +533,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Modified</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2022-05-03</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2022-05-16</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Issued</strong></p></td>
@@ -540,19 +560,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_preamble">2. Preamble</h2>
+<h2 id="_preamble"><a class="anchor" href="#_preamble"></a>3. Preamble</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_abstract">2.1. Abstract</h3>
-<div class="paragraph">
-<p>This Model - the IDN Supermodel - is the Indigenous Data Network&#8217;s overarching data model that provides integration logic for data elements in many of its specialised domains.</p>
-</div>
-<div class="paragraph">
-<p>This Supermodel is formulated similarly to other Supermodels in other, semi-related, scenarios such as <a href="https://www.ga.gov.au">Geoscience Australia</a>'s Supermodel for the <a href="https://surroundaustralia.github.io/loci-supermodel/supermodel.html">Location Index</a> initiative.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_namespaces">2.2. Namespaces</h3>
+<h3 id="_namespaces"><a class="anchor" href="#_namespaces"></a>3.1. Namespaces</h3>
 <div class="paragraph">
 <p>This model is built on a "baseline" of Semantic Web models which use a variety of namespaces. Prefixes for thess namespaces, used througout this document, are listed below.</p>
 </div>
@@ -630,7 +641,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 </div>
 <div class="sect2">
-<h3 id="_terms_definitions">2.3. Terms &amp; Definitions</h3>
+<h3 id="_terms_definitions"><a class="anchor" href="#_terms_definitions"></a>3.2. Terms &amp; Definitions</h3>
 <div class="paragraph">
 <p>The following terms appear in this document and, when they do, the definitions in this section apply to them. This section&#8217;s content is also presented online in a formal vocabulary at:</p>
 </div>
@@ -705,7 +716,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 </div>
 <div class="sect2">
-<h3 id="_conventions">2.4. Conventions</h3>
+<h3 id="_conventions"><a class="anchor" href="#_conventions"></a>3.3. Conventions</h3>
 <div class="paragraph">
 <p>All model diagrams use elements introduced in <a href="#fig-level0-key">Figure 1</a>. These elements are defined in the RDF, RDFS and OWL ontologies, see <a href="#OWL">[OWL]</a> for mode details.</p>
 </div>
@@ -716,10 +727,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_introduction">3. Introduction</h2>
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>4. Introduction</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_supermodel_structure">3.1. Supermodel Structure</h3>
+<h3 id="_supermodel_structure"><a class="anchor" href="#_supermodel_structure"></a>4.1. Supermodel Structure</h3>
 <div class="paragraph">
 <p>Supermodels, such as this one, consist of a set of <a href="#component-data-model">Component Data Models</a> instances within <a href="#data-domain">Data Domains</a> needed for various purposes. This Supermodel identifies the  <a href="#central-class">Central Classes</a> within each Data Domain and associates them with one another - across Data Domains - and with other classes within Data Domains using <a href="#linked-data">Linked Data</a> principles.</p>
 </div>
@@ -731,7 +742,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_idn_data_domains">3.2. IDN Data Domains</h3>
+<h3 id="_idn_data_domains"><a class="anchor" href="#_idn_data_domains"></a>4.2. IDN Data Domains</h3>
 <div class="paragraph">
 <p>This IDN Supermodel is predicated on an assumption that the IDN is a data aggregation organisation and therefore data cataloguing is its major concern. At the centre of this model then is a domain of <a href="#_data_cataloguing_domain">Data Cataloguing</a>, the main elements of which are taken from the <em>Data Catalog Vocabulary</em> <a href="#DCAT">[DCAT]</a>. Many Supermodels have this as one of their Data Domains</p>
 </div>
@@ -749,7 +760,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_uses">3.3. Uses</h3>
+<h3 id="_uses"><a class="anchor" href="#_uses"></a>4.3. Uses</h3>
 <div class="paragraph">
 <p>This Supermodel can be used as a technial reference for all elements of the IDN&#8217;s modelling. Using this document, an IDN technical modeller or data user should be able to discover how each compoennt domain of the IDN has been modelled and how they relate to all other component domains.</p>
 </div>
@@ -760,18 +771,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_model">4. Model</h2>
+<h2 id="_model"><a class="anchor" href="#_model"></a>5. Model</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This model, the actual IDN Supermodel itself, is a profile of - specialised reusing of - multiple, well-known Semantic Web models. It is organised into a series of <em>Levels</em> which serve different purposes. All elements of the model are only defined once and the various <em>Levels</em> simply present views of the model at differnt levels of abstraction to serve their viarous intended purposes.</p>
 </div>
 <div class="sect2">
-<h3 id="_level_0_model_background">4.1. Level 0: Model Background</h3>
+<h3 id="_level_0_model_background"><a class="anchor" href="#_level_0_model_background"></a>5.1. Level 0: Model Background</h3>
 <div class="paragraph">
 <p>This view of the model is a backgrounding one which describes the underpinning model mechanics that it uses. The object modelling used is based on the <em>Web Ontology Language</em> <a href="#OWL">[OWL]</a> and its own underlying use of RDF &amp; RDFS <sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>. The <em>Provenance Ontology</em> <a href="#PROV">[PROV]</a> is used to model real-world causal dependencies - provenance.</p>
 </div>
 <div class="sect3">
-<h4 id="_diagram_key">4.1.1. Diagram Key</h4>
+<h4 id="_diagram_key"><a class="anchor" href="#_diagram_key"></a>5.1.1. Diagram Key</h4>
 <div class="paragraph">
 <p>The figure below is a key for the elements in all of the model diagrams in this document.</p>
 </div>
@@ -783,7 +794,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_object_modelling">4.1.2. Object Modelling</h4>
+<h4 id="_object_modelling"><a class="anchor" href="#_object_modelling"></a>5.1.2. Object Modelling</h4>
 <div class="paragraph">
 <p>The elements from the above subsection are shown in relation to one another in the figure below.</p>
 </div>
@@ -823,7 +834,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_provenance">4.1.3. Provenance</h4>
+<h4 id="_provenance"><a class="anchor" href="#_provenance"></a>5.1.3. Provenance</h4>
 <div class="paragraph">
 <p>General provenance/lineage information about anything - a rock sample, a dataset, a term in a vocabulary etc. - is described using the <em>Provenance Ontology</em> <a href="#PROV">[PROV]</a> which views <em>everything</em> in the world as being of one or more types in <a href="#fig-level0-prov">Figure 3</a>.</p>
 </div>
@@ -855,7 +866,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_level_1_data_domains">4.2. Level 1: Data Domains</h3>
+<h3 id="_level_1_data_domains"><a class="anchor" href="#_level_1_data_domains"></a>5.2. Level 1: Data Domains</h3>
 <div class="paragraph">
 <p><a href="#data-comain">Data Domains</a> are a Supermodel&#8217;s major areas of concern and Level 1 just presents them with no further details. The Data Doamins defined for the IDN so far are:</p>
 </div>
@@ -889,7 +900,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_level_2_central_classes">4.3. Level 2: Central Classes</h3>
+<h3 id="_level_2_central_classes"><a class="anchor" href="#_level_2_central_classes"></a>5.3. Level 2: Central Classes</h3>
 <div class="paragraph">
 <p><a href="#central-class">Central Classes</a> are the major model classes within each Data Domain and Level 2 shows the Data Domains with these classes, and the main relationships between them, indicated. These relationships are used to traverse across Data Domains.</p>
 </div>
@@ -905,9 +916,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>Not all of the relationships between Central Classes have been formalised yet. As they are formaliused, they will be indicated in <a href="#fig-central-classes">Figure 2</a> above.</p>
 </div>
+<div class="paragraph">
+<p>Note that the relationship between <code>Dataset</code> in the <em>Data Catalouging Domain</em> and <code>Agent</code> in the <em>Organisations &amp; People Domain</em> is indicated at this level as using a <code>prov:qualifiedAttribution</code>. While other Supermodels <a href="https://surroundaustralia.github.io/loci-supermodel/supermodel.html#_level_2_central_classes">indicate simple attribution for this relationship</a>, this IDN modelling uses this particular qualified pattern to allow for role-based  data/agent relations.</p>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_level_3_domain_main_modelling">4.4. Level 3: Domain Main Modelling</h3>
+<h3 id="_level_3_domain_main_modelling"><a class="anchor" href="#_level_3_domain_main_modelling"></a>5.4. Level 3: Domain Main Modelling</h3>
 <div class="paragraph">
 <p>Top-level modelling within Data Domains - representations of their major concepts and relationships - are given at Level 3 of the Supermodel. The following Subsections indicate such modelling for each Data Domain.</p>
 </div>
@@ -915,16 +929,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>These Domain Main Models can be used to ascertain whether or not a Supermodel covers particular aspects of a Data Domain. They also indicate which Component Data Models are used per Data Domain via their various classes which might come from several.</p>
 </div>
 <div class="sect3">
-<h4 id="_data_catalouging_domain">4.4.1. Data Catalouging Domain</h4>
+<h4 id="_data_catalouging_domain"><a class="anchor" href="#_data_catalouging_domain"></a>5.4.1. Data Catalouging Domain</h4>
 <div id="fig-datacataloguing" class="imageblock">
 <div class="content">
 <img src="img/main-classes-data-cataloguing.png" alt="main classes data cataloguing">
 </div>
 <div class="title">Figure 6. Central Classes of the Data Cataloguing Domain</div>
 </div>
+<div class="paragraph">
+<p>While the agent/role <code>Attribution</code> modelling within this Domain, as shown in <a href="#fig-datacataloguing">Figure 6</a>, is handled in a standard way here which is according to <a href="#PROV">[PROV]</a> and <a href="#DCAT">[DCAT]</a>, it is brought to the fore in this Supermodel whereas it isn&#8217;t in others, such as the <a href="https://surroundaustralia.github.io/ga-supermodel/supermodel.html">GA Supermodel</a>. This is because, in the IDN, attribution of data to groups and persons with defined roles is a very important concern.</p>
+</div>
 </div>
 <div class="sect3">
-<h4 id="_observations_domain">4.4.2. Observations Domain</h4>
+<h4 id="_observations_domain"><a class="anchor" href="#_observations_domain"></a>5.4.2. Observations Domain</h4>
 <div id="fig-observations" class="imageblock">
 <div class="content">
 <img src="img/main-classes-observations.png" alt="main classes observations">
@@ -933,25 +950,43 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_organisations_people">4.4.3. Organisations &amp; People</h4>
-<div id="orgs" class="imageblock">
+<h4 id="_organisations_people"><a class="anchor" href="#_organisations_people"></a>5.4.3. Organisations &amp; People</h4>
+<div id="fig-orgs" class="imageblock">
 <div class="content">
 <img src="img/main-classes-organisations.png" alt="main classes organisations">
 </div>
 <div class="title">Figure 8. Central Classes of the Organisations &amp; People Domain</div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_spatiality"><a class="anchor" href="#_spatiality"></a>5.4.4. Spatiality</h4>
+<div id="fig-spatiality" class="imageblock">
+<div class="content">
+<img src="img/main-classes-spatiality.png" alt="main classes spatiality">
+</div>
+<div class="title">Figure 9. Central Classes of the Spatiality Domain</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_theming"><a class="anchor" href="#_theming"></a>5.4.5. Theming</h4>
+<div id="fig-theming" class="imageblock">
+<div class="content">
+<img src="img/main-classes-theming.png" alt="main classes theming">
+</div>
+<div class="title">Figure 10. Central Classes of the Theming Domain</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_data_domains_details">5. Data Domains Details</h2>
+<h2 id="_data_domains_details"><a class="anchor" href="#_data_domains_details"></a>6. Data Domains Details</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The Data Domains described above are implemented using multiple models and other resources. The following subsections describe the Domains' details and link to all their resources.</p>
 </div>
 <div class="sect2">
-<h3 id="_data_cataloguing_domain">5.1. Data Cataloguing Domain</h3>
+<h3 id="_data_cataloguing_domain"><a class="anchor" href="#_data_cataloguing_domain"></a>6.1. Data Cataloguing Domain</h3>
 <div class="paragraph">
 <p>This model is based on the <em>Data Catalog Vocabulary</em> <a href="#DCAT">[DCAT]</a> and <em>The Provenance Ontology</em> <a href="#PROV">[PROV]</a> with extensions to cater for mappings to FAIR <a href="#FAIR">[FAIR]</a> and CARE <a href="#CARE">[CARE]</a> models. The essential model is shown in <a href="#datacataloguing-model">Figure 8</a>.</p>
 </div>
@@ -959,11 +994,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <img src="img/details-datacataloguing.png" alt="details datacataloguing">
 </div>
-<div class="title">Figure 9. Data Cataloguing Model, based on DCAT &amp; PROV</div>
+<div class="title">Figure 11. Data Cataloguing Model, based on DCAT &amp; PROV</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_observations_domain_2">5.2. Observations Domain</h3>
+<h3 id="_observations_domain_2"><a class="anchor" href="#_observations_domain_2"></a>6.2. Observations Domain</h3>
 <div class="paragraph">
 <p>This domain is essentially the Data Cube Vocabulary <a href="#DQ">[DQ]</a>'s core elements with dataset metadata replaced with elements from DCAT <a href="#DCAT">[DCAT]</a>. The essential model is shown in <a href="#obs-model">Figure 9</a>.</p>
 </div>
@@ -971,23 +1006,83 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <img src="img/details-observations.png" alt="details observations">
 </div>
-<div class="title">Figure 10. Observations Model, based on <a href="https://www.w3.org/TR/vocab-data-cube/#fig-pictorial-summary-of-key-terms-and-their-relationship">Data Cube Vocabulary overview</a></div>
+<div class="title">Figure 12. Observations Model, based on <a href="https://www.w3.org/TR/vocab-data-cube/#fig-pictorial-summary-of-key-terms-and-their-relationship">Data Cube Vocabulary overview</a></div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_spatiality_domain">5.3. Spatiality Domain</h3>
+<h3 id="_spatiality_domain"><a class="anchor" href="#_spatiality_domain"></a>6.3. Spatiality Domain</h3>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p>Spatiality is a concern for the IDN but not  aprimary concern as it is in other Supermodels such as the <a href="https://surroundaustralia.github.io/loci-supermodel/supermodel.html#_spatiality_domain">Loc-I Supermodel</a>. The IDN is aiming to be fully compatable with the Loc-I Supermodel such that any IDN spatial datasets are able to understood as Loc-I datasets and thus will be interoperable with other Loc-I Datasets. This will enable their use with the wider Loc-I spatial data.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_theming_domain">5.4. Theming Domain</h3>
+<h3 id="_theming_domain"><a class="anchor" href="#_theming_domain"></a>6.4. Theming Domain</h3>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p>The purposes of characterising theming of data as a whole domain, rather than just applying it with <em>Data Cataloguing</em>, is to call it out as a major concern for IDN data beyond just cataloguing and to allow across allow for the full expression of sophisticated classification mecanisms.</p>
+</div>
+<div class="paragraph">
+<p>The general mecahnisms for theming within this domain are standard, that is they follow patterns indicated in <a href="#DCAT">[DCAT]</a> and <a href="#SKOS">[SKOS]</a> used in many other models.</p>
+</div>
+<div class="paragraph">
+<p>The DCAT pattern is, for whole catalogues, to identify <em>Knowledge Organization Systems</em> (KOSes) and then, for idividual datasets, to categorise (theme) them using controlled themese from those KOSes. DCAT recommends the use of <a href="#SKOS">[SKOS]</a> as a partisular KOS.</p>
+</div>
+<div class="paragraph">
+<p>The general pattern for theming (classifying or categorising) datasets or other IDN objects is as per <a href="#fig-theming-pattern">Figure 13</a> where the <a href="#DCAT">[DCAT]</a> <code>theme</code> property is used.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/theming-pattern.png" alt="fig-theming-pattern">
+</div>
+<div class="title">Figure 13. The pattern of how themese (classifications / categories) are applied to Datasets and other IDN objects</div>
+</div>
+<div class="paragraph">
+<p>A variation on this pattern is to use the Linked Data <a href="https://patterns.dataincubator.org/book/qualified-relation.html"><em>qualified relations pattern</em></a> which</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/qualified-pattern.png" alt="fig-theming-pattern">
+</div>
+<div class="title">Figure 14. The Linked Data <a href="https://patterns.dataincubator.org/book/qualified-relation.html"><em>qualified relations pattern</em></a> (A.) and an implementation of it for dataset attribution (B.)</div>
+</div>
+<div class="sect3">
+<h4 id="_specific_themeing_resources"><a class="anchor" href="#_specific_themeing_resources"></a>6.4.1. Specific Themeing Resources</h4>
+<div class="paragraph">
+<p>This Supermodel specifies the use of several specific SKOS vocabularies for data theming that express core classifications of interest to the IDN. Some of these vocabularies are widely used and the IDN has adopted them, others the IDN has created for its specific needs. The vocabularies are listed here but detailed in <a href="#_annex_a_vocabularies">Annex A: Vocabularies</a>. They are:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="#ISO19115-1">[ISO19115-1]</a>'s <a href="#_iso19115_1_role_codes">Role Codes</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>for <code>Agent</code> instances' roles in relation to <code>Dataset</code> instances</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#_indigenous_data_governance_roles">Indigenous Data Governance Roles</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>for indigenous <code>Agent</code> roles in relation to <code>Dataset</code> instances</p>
+</li>
+<li>
+<p>inspired by the Role Codes above</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Use of th</p>
+</div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_organisations_people_domain">5.5. Organisations &amp; People Domain</h3>
+<h3 id="_organisations_people_domain"><a class="anchor" href="#_organisations_people_domain"></a>6.5. Organisations &amp; People Domain</h3>
 <div class="paragraph">
 <p>This domain is essentially the organization modelling element of <a href="https://schema.org">schema.org</a> with a few additional properties to track some IDN-relevant aspects of an organisation. The essential model is shown in <a href="#org-model">Figure 10</a>.</p>
 </div>
@@ -995,13 +1090,185 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="content">
 <img src="img/details-organisations.png" alt="details organisations">
 </div>
-<div class="title">Figure 11. IDN Organisation Model, based on schema.org</div>
+<div class="title">Figure 15. IDN Organisation Model, based on schema.org</div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_references">References</h2>
+<h2 id="_annex_a_vocabularies"><a class="anchor" href="#_annex_a_vocabularies"></a>Annex A: Vocabularies</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_iso19115_1_role_codes"><a class="anchor" href="#_iso19115_1_role_codes"></a>ISO19115-1 Role Codes</h3>
+<div class="paragraph">
+<p>This vocabulary is a well known and widely used codelist of the roles that `Agent`s play in relation to `Dataset`s. The codelist was originally presented in the first version of ISO19115 (2003) as a table in a PDF document and has been delivered online in multiple forms but always unofficially: the ISO has not yet published an authoratitive form.</p>
+</div>
+<div class="paragraph">
+<p>A current ISO test publication of this codelist as a SKOS vocabulary is online at <a href="http://115.146.86.155/vocab/CI_RoleCode" class="bare">http://115.146.86.155/vocab/CI_RoleCode</a>, taken from the 2018 form of ISO19115-1.</p>
+</div>
+<div class="paragraph">
+<p>The roles and their descriptions from this codelist are given in the table below for quick reference.</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<caption class="title">Table 2. <a href="#ISO19115">[ISO19115]</a>'s Role Code vocabulary</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Concept</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/author">author</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party who authored the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/coAuthor">co-author</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party who jointly authors the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/collaborator">collaborator</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party who assists with the generation of the resource other than the principal investigator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/contributor">contributor</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party contributing to the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/custodian">custodian</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party that accepts accountability and responsibility for the resource and ensures appropriate care and maintenance of the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/distributor">distributor</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party who distributes the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/editor">editor</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party who reviewed or modified the resource to improve the content</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/funder">funder</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party providing monetary support for the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/mediator">mediator</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a class of entity that mediates access to the resource and for whom the resource is intended or useful</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/originator">originator</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party who created the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/owner">owner</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party that owns the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/pointOfContact">point of contact</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party who can be contacted for acquiring knowledge about or acquisition of the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/principalInvestigator">principal investigator</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">key party responsible for gathering information and conducting research</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/processor">processor</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party who has processed the data in a manner such that the resource has been modified</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/publisher">publisher</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party who published the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/resourceProvider">resource provider</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party that supplies the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/rightsHolder">rights holder</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party owning or managing rights over the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/sponsor">sponsor</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party who speaks for the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/stakeholder">stakeholder</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party who has an interest in the resource or the use of the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/user">user</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">party who uses the resource</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_indigenous_data_governance_roles"><a class="anchor" href="#_indigenous_data_governance_roles"></a>Indigenous Data Governance Roles</h3>
+<div class="paragraph">
+<p><mark>TODO: Establish this vocab in RVA</mark></p>
+</div>
+<div class="paragraph">
+<p>This vocabulary is core to the description of indigenous governance of IDN data. It specifies a series of indigenous roles that are partly derived from the roles in the <a href="#_iso19115_1_role_codes">Role Codes</a> vocabulary above but uses definitions established by the IDN.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+This vocabulary is in development within the IDN so, until this message is removed, this is not a complete or final vocabulary.
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<caption class="title">Table 3. <a href="#ISO19115">[ISO19115]</a>'s Role Code vocabulary</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Concept</th>
+<th class="tableblock halign-left valign-top">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">indigenous custodian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indigenous party that accepts accountability and responsibility for resource from an indigenous perspective. A non-indigenous Custodian might act on behalf of an Indigenous Custodian</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">subject group</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indigenous party that the resource contains information about</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">indigenous subject group point of contact</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Point of Contact for an Indigenous Subject Group</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">indigenous point of contact</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An indigenous party who can be contacted for acquiring knowledge about or acquisition of the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">indigenous rights holder</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Party owning or managing indigenous rights over the resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">indigenous stakeholder</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indigenous party who has an interest in the resource or the use of the resource</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references"><a class="anchor" href="#_references"></a>References</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -1018,7 +1285,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><a id="GEO"></a> [GEO] Open Geospatial Consortium, <em>OGC GeoSPARQL - A Geographic Query Language for RDF Data, Version 1.1</em> (2021). OGC Implementation Specification. <a href="http://www.opengis.net/doc/IS/geosparql/1.1" class="bare">http://www.opengis.net/doc/IS/geosparql/1.1</a></p>
 </li>
 <li>
-<p><a id="ISO19156"></a> [ISO19156] International Organization for Standardization, <em>ISO 19156: Geographic information — Observations and measurements</em> (2011)</p>
+<p><a id="ISO19115"></a> [ISO19115] International Organization for Standardization, ISO 19115-1:2014 Geographic information — Metadata — Part 1: Fundamentals (2014) <a href="https://www.iso.org/standard/53798.html" class="bare">https://www.iso.org/standard/53798.html</a></p>
+</li>
+<li>
+<p><a id="ISO19156"></a> [ISO19156] International Organization for Standardization, <em>ISO 19156: Geographic information — Observations and measurements</em> (2011) <a href="https://www.iso.org/standard/32574.html" class="bare">https://www.iso.org/standard/32574.html</a></p>
 </li>
 <li>
 <p><a id="OWL"></a> [OWL] World Wide Web Consortium, <em>OWL 2 Web Ontology Language Document Overview (Second Edition)</em>, W3C Recommendation (11 December 2012). <a href="https://www.w3.org/TR/owl2-overview/" class="bare">https://www.w3.org/TR/owl2-overview/</a></p>
@@ -1063,7 +1333,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-05-03 04:59:45 UTC
+Last updated 2022-05-16 00:03:24 UTC
 </div>
 </div>
 </body>
