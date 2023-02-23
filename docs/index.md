@@ -36,18 +36,16 @@ This content is copyright as follows:
 
 ## Contacts
 
-This Supermodel is being authored for the [Geological Survey of Queensland](https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx) within the [Department of Mines, Industry Regulation and Safety](https://www.dmirs.wa.gov.au).
+This Supermodel is being authored for the [Geological Survey of Queensland](https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq) within the [Department of Resources](https://www.resources.qld.gov.au).
 
 For technical matters, please contact:
 
 **Nicholas Car**  
-_Geoscience Data Architect_  
-Geological Survey of WA  
-Department of Mines, Industry Regulation and Safety  
-<nick.car@dmirs.wa.gov.au>  
-<https://orcid.org/0000-0002-8742-7730>  
+_Data Architect_  
+[KurrawongAI](https://kurrawong.ai) 
+<nick@kurrawong.ai>
 
 For other matters, please contact:
 
 **Geological Survey of Queensland**  
-<https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx>
+<https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq>
