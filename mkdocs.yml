@@ -1,0 +1,35 @@
+site_name: GSQ Supermodel
+copyright: Copyright &copy; Government of Queensland (Department of Mines, Industry Regulation and Safety), 2023
+extra:
+  generator: false
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - md_in_html
+  - admonition
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+theme:
+  name: material
+  favicon: assets/favicon.png
+  palette:
+    scheme: youtube
+  logo: assets/classes-icon.svg
+  # custom_dir: overrides
+nav:
+    - 'index.md'
+    - 'supermodel.md'
+    - 'background.md'
+    - 'backbone.md'
+    - 'Component Models':
+        - 'Overview': 'components.md'
+        - 'Boreholes': 'components/boreholes-profile.md'
+        - 'Samples': 'components/samples-profile.md'
+        - 'Geological Features': 'components/geo-features-profile.md'
+        - 'Admin Features': 'components/admin-features-profile.md'
+    - 'vocabularies.md'
+    - 'validators.md'
+
+# SVG resizer: https://svg-converter.com/resize
