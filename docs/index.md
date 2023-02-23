@@ -1,7 +1,7 @@
 <h1 style="display:none;"></h1>
 ## About
 
-This is a documentation website for a Supermodel: a multi-part data Knowledge Graph model.
+This is a documentation website for a Supermodel: a multi-part Knowledge Graph data model.
 
 This particular Supermodel is for a public expression of the data holdings of the [Geological Survey of Queensland](https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq).
 
