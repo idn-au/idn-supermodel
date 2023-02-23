@@ -45,7 +45,7 @@ _Data Architect_
 [KurrawongAI](https://kurrawong.ai) 
 <nick@kurrawong.ai>
 
-For other matters, please contact:
+For content and all other matters, please contact:
 
 **Geological Survey of Queensland**  
 <https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq>
