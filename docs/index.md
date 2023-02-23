@@ -49,3 +49,8 @@ For content and all other matters, please contact:
 
 **Geological Survey of Queensland**  
 <https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq>
+
+System Owner:  
+**Mark Gordon**  
+Geological Survey of Queensland, Department of Resources, Brisbane, QLD, Australia  
+<mark.gordon@resources.qld.gov.au>
