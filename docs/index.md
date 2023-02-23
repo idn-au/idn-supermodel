@@ -15,7 +15,8 @@ What other Supermodels are related? | See the [Related Supermodels](supermodel.m
 
 ### February 2023
 
-This Supermodel is for demonstration of Supermodel concepts only. 
+This Supermodel is intended to become the overarching . integrative data model for the GSQ's public data but, as of early 2023, it is in an early stage of development with few / no Component Models completed. By min-2023, it is expected that several C 
+Component Models, such as Boreholes, Samples etc. will be complete enough for initial public delivery.
 
 Currently, as of February 2023, the following elements have been established:
 
@@ -31,7 +32,7 @@ This repository's content is available for reuse according to the [Creative Comm
 
 This content is copyright as follows:
 
-<div style="text-align:center;"><em>&copy; Government of Queensland (Department of Mines, Industry Regulation and Safety), 2023</em></div>
+<div style="text-align:center;"><em>&copy; Government of Queensland (Department of Resources), 2023</em></div>
 
 ## Contacts
 
