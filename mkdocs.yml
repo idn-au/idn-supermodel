@@ -1,4 +1,4 @@
-site_name: GSQ Supermodel
+site_name: IDN Supermodel
 copyright: Copyright &copy; Government of Queensland (Department of Resources), 2023
 extra:
   generator: false
@@ -25,10 +25,7 @@ nav:
     - 'backbone.md'
     - 'Component Models':
         - 'Overview': 'components.md'
-        - 'Boreholes': 'components/boreholes-profile.md'
-        - 'Samples': 'components/samples-profile.md'
-        - 'Geological Features': 'components/geo-features-profile.md'
-        - 'Admin Features': 'components/admin-features-profile.md'
+        - 'Catalogue Profile': 'components/cp.md'
     - 'vocabularies.md'
     - 'validators.md'
 

@@ -1,3 +1,3 @@
-The vocabularies for this Supermodel are all contained in the GSQ Vocabulary Server:
+The vocabularies for this Supermodel are all contained in the IDN Vocabulary Server:
 
-* <https://vocabs.gsq.digital/vocabulary/>
+* <https://idn.kurrawong.net/vocab/>

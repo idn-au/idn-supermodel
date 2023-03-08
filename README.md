@@ -1,10 +1,11 @@
-# GSQ Supermodel
+# IDN Supermodel
 
-This repository contains the source code for the website documenting the [Geological Survey of Queensland](https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx) within the [Department of Resources](https://www.resources.qld.gov.au).
+This repository contains the source code for the website documenting a data model for the [Indigenous Data Network](https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network) within the [Indigenous Studies Unit](https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-studies) of the University of Melbourne.
 
+The website built from this content is online at 
 Please see the documentation's online location:
 
-* <http://nicholascar.com/gsq-supermodel/>
+* <http://idn-au.github.io/idn-supermodel/>
 
 ## License & Rights
 
@@ -12,21 +13,23 @@ This repository's content is available for reuse according to the [Creative Comm
 
 This content is copyright as follows:
 
-&copy; Government of Queensland, 2023
+&copy; Indigenous Data Network, 2023
 
 ## Contacts
+
+System Owner:
+
+**Sandra Silcot**  
+Indigenous Data Network  
+*contact [via the IDN](https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network)*
 
 For technical matters, please contact:
 
 **Nicholas Car**  
 _Data Architect_  
-[KurrawongAI](https://kurrawong.ai) 
+[KurrawongAI](https://kurrawong.ai)  
 <nick@kurrawong.ai>
 
-For other matters, please contact:
-
-**Geological Survey of Queensland**  
-<https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq>
 
 # Technical Operations
 
