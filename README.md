@@ -15,20 +15,18 @@ This content is copyright as follows:
 
 &copy; Indigenous Data Network, 2023
 
-## Contacts
 
-System Owner:
+## Contact
 
-**Sandra Silcot**  
+**Jamie Feiss**  
+*Data Infrastructure Developer*  
 Indigenous Data Network  
-*contact [via the IDN](https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network)*
+University of Melbourne  
+<jamie.feiss@unimelb.edu.au>
 
-For technical matters, please contact:
-
-**Nicholas Car**  
-_Data Architect_  
-[KurrawongAI](https://kurrawong.ai)  
-<nick@kurrawong.ai>
+_Owner Organisation_  
+*Indigenous Data Network*  
+<https://idnau.org>
 
 
 # Technical Operations
